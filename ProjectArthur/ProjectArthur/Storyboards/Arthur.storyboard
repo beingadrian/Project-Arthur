@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Arthur View Controller-->
+        <scene sceneID="s6h-nX-tt2">
+            <objects>
+                <viewController id="QJw-jG-JfL" customClass="ArthurViewController" customModule="ProjectArthur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fuP-Tm-urG"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Hm-l7-4yr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDh-ra-lI5" customClass="ArthurMainView" customModule="ProjectArthur" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnx-Ee-dvt">
+                                <rect key="frame" x="112" y="259" width="150" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bnx-Ee-dvt" secondAttribute="height" multiplier="1:1" id="tDA-VZ-ws5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bnx-Ee-dvt" firstAttribute="centerY" secondItem="GDh-ra-lI5" secondAttribute="centerY" id="5g1-0Z-Bnj"/>
+                            <constraint firstItem="bnx-Ee-dvt" firstAttribute="centerX" secondItem="GDh-ra-lI5" secondAttribute="centerX" id="PeR-PH-Kjh"/>
+                            <constraint firstItem="bnx-Ee-dvt" firstAttribute="width" secondItem="GDh-ra-lI5" secondAttribute="width" multiplier="0.4" id="YYw-cu-13I"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnY-UJ-1vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230.5" y="235.5"/>
+        </scene>
+    </scenes>
+</document>
