@@ -80,7 +80,7 @@ extension ArthurViewController: OEEventsObserverDelegate {
     }
     
     func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
-        print("Heard: \(hypothesis)\nRecognitionScore: \(recognitionScore)")
+        print("Heard: \(hypothesis.characters.split{$0 == " "}.map(String.init).last)\nRecognitionScore: \(recognitionScore)")
     }
     
 }

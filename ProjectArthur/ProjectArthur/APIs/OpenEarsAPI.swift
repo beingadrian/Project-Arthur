@@ -36,6 +36,33 @@ private let denialModel: Set<String> = Set([
 
 private let languageModel: Array<String> = Array(affirmativeModel) + Array(denialModel)
 
+private let grammarModel = [
+    ["YES", "NO"]: "OneOfTheseWillBeSaidOnce"
+]
+
+//private let grammarModel = [
+//    "OneOfTheseWillBeSaidOnce": [
+//    "YES",
+//    "ALRIGHT",
+//    "FINE",
+//    "YEA",
+//    "AYE",
+//    "BY ALL MEANS",
+//    "PLEASE DO SO",
+//    "CERTAINLY",
+//    "DEFINITELY",
+//    "OF COURSE",
+//    "SURE",
+//    "GO FOR IT",
+//    "SHOOT",
+//    "NO",
+//    "NO THANK YOU",
+//    "ABSOLUTELY NOT",
+//    "NOT TODAY",
+//    "NOPE",
+//    "NEGATIVE",
+//    "I'LL PASS"]]
+
 class OpenEarsAPI {
     private var lmPath: String!
     private var dicPath: String!
@@ -54,6 +81,7 @@ class OpenEarsAPI {
         let lmGenerator = OELanguageModelGenerator()
         let name = "LanguageModelFile"
         
+        lmGenerator.generateGrammarFromDictionary(grammarModel, withFilesNamed: name, forAcousticModelAtPath: OEAcousticModel.pathToModel("AcousticModelEnglish"))
         lmGenerator.generateLanguageModelFromArray(languageModel, withFilesNamed: name, forAcousticModelAtPath: OEAcousticModel.pathToModel("AcousticModelEnglish"))
         lmPath = lmGenerator.pathToSuccessfullyGeneratedLanguageModelWithRequestedName(name)
         dicPath = lmGenerator.pathToSuccessfullyGeneratedDictionaryWithRequestedName(name)
