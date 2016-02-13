@@ -21,6 +21,9 @@
 		332610961C6FD04E008B8B5C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 332610941C6FD04E008B8B5C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		332610981C6FD086008B8B5C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610971C6FD086008B8B5C /* RxCocoa.framework */; };
 		332610991C6FD086008B8B5C /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 332610971C6FD086008B8B5C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		332610AA1C6FD2D3008B8B5C /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 332610A71C6FD2D3008B8B5C /* AcousticModelEnglish.bundle */; };
+		332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610A81C6FD2D3008B8B5C /* OpenEars.framework */; };
+		332610AC1C6FD2D3008B8B5C /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610A91C6FD2D3008B8B5C /* Slt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +73,13 @@
 		332610441C6FCB1F008B8B5C /* ProjectArthurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectArthurUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		332610481C6FCB1F008B8B5C /* ProjectArthurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectArthurUITests.swift; sourceTree = "<group>"; };
 		3326104A1C6FCB1F008B8B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		332610811C6FCF74008B8B5C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		332610821C6FCF74008B8B5C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		332610941C6FD04E008B8B5C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		332610971C6FD086008B8B5C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		332610811C6FCF74008B8B5C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		332610821C6FCF74008B8B5C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		332610941C6FD04E008B8B5C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		332610971C6FD086008B8B5C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		332610A71C6FD2D3008B8B5C /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		332610A81C6FD2D3008B8B5C /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		332610A91C6FD2D3008B8B5C /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332610AC1C6FD2D3008B8B5C /* Slt.framework in Frameworks */,
 				332610981C6FD086008B8B5C /* RxCocoa.framework in Frameworks */,
 				332610851C6FCF74008B8B5C /* RealmSwift.framework in Frameworks */,
+				332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */,
 				332610831C6FCF74008B8B5C /* Realm.framework in Frameworks */,
 				332610951C6FD04E008B8B5C /* RxSwift.framework in Frameworks */,
 			);
@@ -108,7 +116,6 @@
 		3326101C1C6FCB1F008B8B5C = {
 			isa = PBXGroup;
 			children = (
-				332610691C6FCC95008B8B5C /* Frameworks */,
 				332610271C6FCB1F008B8B5C /* ProjectArthur */,
 				3326103C1C6FCB1F008B8B5C /* ProjectArthurTests */,
 				332610471C6FCB1F008B8B5C /* ProjectArthurUITests */,
@@ -130,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				3326109A1C6FD0C0008B8B5C /* View Controller */,
+				332610A61C6FD2D3008B8B5C /* Frameworks */,
 				332610281C6FCB1F008B8B5C /* AppDelegate.swift */,
 				3326102C1C6FCB1F008B8B5C /* Main.storyboard */,
 				3326102F1C6FCB1F008B8B5C /* Assets.xcassets */,
@@ -157,22 +165,25 @@
 			path = ProjectArthurUITests;
 			sourceTree = "<group>";
 		};
-		332610691C6FCC95008B8B5C /* Frameworks */ = {
+		3326109A1C6FD0C0008B8B5C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		332610A61C6FD2D3008B8B5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				332610971C6FD086008B8B5C /* RxCocoa.framework */,
 				332610941C6FD04E008B8B5C /* RxSwift.framework */,
 				332610811C6FCF74008B8B5C /* Realm.framework */,
 				332610821C6FCF74008B8B5C /* RealmSwift.framework */,
+				332610A71C6FD2D3008B8B5C /* AcousticModelEnglish.bundle */,
+				332610A81C6FD2D3008B8B5C /* OpenEars.framework */,
+				332610A91C6FD2D3008B8B5C /* Slt.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3326109A1C6FD0C0008B8B5C /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controller";
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				332610331C6FCB1F008B8B5C /* LaunchScreen.storyboard in Resources */,
+				332610AA1C6FD2D3008B8B5C /* AcousticModelEnglish.bundle in Resources */,
 				332610301C6FCB1F008B8B5C /* Assets.xcassets in Resources */,
 				3326102E1C6FCB1F008B8B5C /* Main.storyboard in Resources */,
 			);
@@ -467,6 +479,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ProjectArthur/Frameworks",
 				);
 				INFOPLIST_FILE = ProjectArthur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -482,6 +496,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ProjectArthur/Frameworks",
 				);
 				INFOPLIST_FILE = ProjectArthur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
