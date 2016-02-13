@@ -30,6 +30,7 @@
 		BF40726E1C6FE19200DA8866 /* ReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF40726C1C6FE19200DA8866 /* ReportTableViewCell.xib */; };
 		BF4072701C6FE1C400DA8866 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726F1C6FE1C400DA8866 /* ReportView.swift */; };
 		BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072721C6FE27400DA8866 /* DesignableView.swift */; };
+		BF4072751C6FE49800DA8866 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		BF40726C1C6FE19200DA8866 /* ReportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportTableViewCell.xib; sourceTree = "<group>"; };
 		BF40726F1C6FE1C400DA8866 /* ReportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		BF4072721C6FE27400DA8866 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				332610AC1C6FD2D3008B8B5C /* Slt.framework in Frameworks */,
+				BF4072751C6FE49800DA8866 /* EstimoteSDK.framework in Frameworks */,
 				332610981C6FD086008B8B5C /* RxCocoa.framework in Frameworks */,
 				332610851C6FCF74008B8B5C /* RealmSwift.framework in Frameworks */,
 				332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */,
@@ -185,6 +188,7 @@
 		332610A61C6FD2D3008B8B5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */,
 				332610971C6FD086008B8B5C /* RxCocoa.framework */,
 				332610941C6FD04E008B8B5C /* RxSwift.framework */,
 				332610811C6FCF74008B8B5C /* Realm.framework */,

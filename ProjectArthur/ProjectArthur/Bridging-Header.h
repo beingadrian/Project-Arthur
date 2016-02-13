@@ -13,3 +13,4 @@
 #import <OpenEars/OELogging.h>
 #import <OpenEars/OEFliteController.h>
 #import <Slt/Slt.h>
+#import <EstimoteSDK/EstimoteSDK.h>
