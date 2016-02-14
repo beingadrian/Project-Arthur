@@ -13,6 +13,8 @@ class ReportViewController: UIViewController {
 
     var disposeBag = DisposeBag()
     
+    let realmHelper = RealmReportHelper()
+    
     // MARK: - Properties
     
     @IBOutlet var mainView: ReportMainView!
@@ -64,6 +66,8 @@ class ReportViewController: UIViewController {
     private func setup() {
         
         self.viewModel = ReportViewModel(owner: self)
+        
+        realmHelper.prepareForReportGeneration()
         
         // table view setup
         self.mainView.reportTableView.delegate = self
