@@ -17,7 +17,7 @@ class AVSpeechSynthesizerAPI {
         case SpeechSynthError(error: NSError?)
     }
     
-    private let synth = AVSpeechSynthesizer()
+    let synth = AVSpeechSynthesizer()
     
     /*
     * In the future, use RealmCards (or something similar) instead of [String:AnyObject]s. The app runs entirely on the internal database, and as such, passing the "queue" of cards is only reasonably done from internally. This way, there will be a more solid system of parsing. Inside this function, create an "AVSpeechUtterance" class, and use that to approach the vocalization of your cards.
@@ -33,6 +33,21 @@ class AVSpeechSynthesizerAPI {
 //        speechUtterance.voice = AVSpeechSynthesisVoice(identifier: AVSpeechSynthesisVoiceIdentifierAlex)
         print(voice)
         synth.speakUtterance(speechUtterance)
+    }
+    
+    func dailyPrompt() {
+        let speechUtterance = AVSpeechUtterance(string: "Adrian, welcome home! Would you like to hear your daily report?")
+        let voice = AVSpeechSynthesisVoice(language: "en-GB")
+        speechUtterance.pitchMultiplier = 1.75
+        speechUtterance.voice = voice
+        synth.speakUtterance(speechUtterance)
+    }
+    
+    func sayReport(report: RealmCard) {
+        //        let speechUtterance = AVSpeechUtterance(string: report)
+        //        let voice = AVSpeechSynthesisVoice(language: "en-GB")
+        //        speechUtterance.pitchMultiplier = 1.75
+        //        speechUtterance.voice = voice
     }
     
     

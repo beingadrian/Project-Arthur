@@ -11,14 +11,15 @@ import UIKit
 class ArthurViewController: UIViewController {
     
     var openEars: OpenEarsAPI!
+    var speechAPI: AVSpeechSynthesizerAPI!
     
     @IBOutlet weak var mainView: ArthurMainView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        setup()
-        mainView.speechAPI.speechTest()
+        setup()
+//        mainView.speechAPI.speechTest()
         
         
     }
@@ -27,8 +28,13 @@ class ArthurViewController: UIViewController {
         openEars = OpenEarsAPI()
         openEars.eventObserver.delegate = self // Needed to access events
         
+        speechAPI = AVSpeechSynthesizerAPI()
+        speechAPI.synth.delegate = self
+        
+        
         // Testing:
-        openEars.startListening()
+//        openEars.startListening()
+        speechAPI.dailyPrompt()
         
     }
     
@@ -83,8 +89,19 @@ extension ArthurViewController: OEEventsObserverDelegate {
     }
     
     func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
-        print("Heard: \(hypothesis.characters.split{$0 == " "}.map(String.init).last)\nRecognitionScore: \(recognitionScore)")
+//        print("Heard: \(hypothesis.characters.split{$0 == " "}.map(String.init).last)\nRecognitionScore: \(recognitionScore)")
+        let heard = hypothesis.characters.split{$0 == " "}.map(String.init).last
+        if affirmativeModel.contains(heard!) {
+            print("Yes")
+        }
+        else {
+            print("No")
+        }
     }
+    
+}
+
+extension ArthurViewController: AVSpeechSynthesizerDelegate {
     
 }
 

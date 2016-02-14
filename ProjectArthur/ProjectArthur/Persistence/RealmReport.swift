@@ -1,5 +1,5 @@
 //
-//  RealmUIState.swift
+//  RealmReport.swift
 //  ProjectArthur
 //
 //  Created by Jimmy Yue on 2/13/16.
@@ -9,12 +9,12 @@
 import Foundation
 import RealmSwift
 
-class RealmUIState: Object {
-    dynamic var name = ""
-    dynamic var state = [String:AnyObject]() // [String:AnyObject]
+class RealmReport: Object {
+    dynamic var id = 0
+    dynamic var script = ""
+    let cards = List<RealmCard>()
     
     override static func primaryKey() -> String? {
-        return "name"
+        return "id"
     }
-    
 }
