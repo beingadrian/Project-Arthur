@@ -49,5 +49,16 @@ class ReportMainView: UIView {
             
         }
     }
+    
+    func moveBgByOffset (offset: CGFloat) {
+        if offset < 0 {
+            let scale = 1.0 - offset/500
+            topBG.transform = CGAffineTransformMakeScale(scale, scale)
+        }
+        
+        else {
+            topBG.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        }
+    }
 
 }
