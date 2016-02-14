@@ -13,7 +13,8 @@ class RealmCard: Object {
     dynamic var name = ""
     dynamic var enabled = true
     dynamic var content = ""
-    dynamic var settings = [] // [String:AnyObject]
+    dynamic var values = [String:AnyObject]() // [String:AnyObject]
+    dynamic var settings = [String:AnyObject]() // [String:AnyObject]
     
     override static func primaryKey() -> String? {
         return "name"

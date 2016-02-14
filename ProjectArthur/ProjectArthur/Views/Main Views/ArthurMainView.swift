@@ -9,8 +9,6 @@
 import UIKit
 
 class ArthurMainView: UIView {
-
-    let speechAPI = AVSpeechSynthesizerAPI()
     
 
 }

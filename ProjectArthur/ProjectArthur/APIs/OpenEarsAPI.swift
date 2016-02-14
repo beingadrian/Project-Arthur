@@ -8,36 +8,24 @@
 
 import Foundation
 
-private let affirmativeModel: Set<String> = Set([
+let affirmativeModel: Set<String> = Set([
     "YES",
     "ALRIGHT",
     "FINE",
-    "YEA",
-    "AYE",
-    "BY ALL MEANS",
-    "PLEASE DO SO",
-    "CERTAINLY",
     "DEFINITELY",
-    "OF COURSE",
     "SURE",
-    "GO FOR IT",
-    "SHOOT"
     ])
 
-private let denialModel: Set<String> = Set([
+let denialModel: Set<String> = Set([
     "NO",
-    "NO THANK YOU",
-    "ABSOLUTELY NOT",
-    "NOT TODAY",
     "NOPE",
     "NEGATIVE",
-    "I'LL PASS"
     ])
 
 private let languageModel: Array<String> = Array(affirmativeModel) + Array(denialModel)
 
 private let grammarModel = [
-    ["YES", "NO"]: "OneOfTheseWillBeSaidOnce"
+    ["YES", "SURE", "ALRIGHT", "FINE", "DEFINITELY", "NO", "NEGATIVE", "NOPE"]: "OneOfTheseWillBeSaidOnce"
 ]
 
 //private let grammarModel = [
