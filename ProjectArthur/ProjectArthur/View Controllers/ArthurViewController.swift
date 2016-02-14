@@ -21,7 +21,6 @@ class ArthurViewController: UIViewController {
         mainView.speechAPI.speechTest()
         
         
-        // Do any additional setup after loading the view.
     }
     
     private func setup() {
