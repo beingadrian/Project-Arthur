@@ -24,8 +24,9 @@ class ReportViewController: UIViewController {
             return
         }
         if isHome as! Bool == true {
-            
-            self.presentViewController(ArthurViewController(), animated: true, completion: nil)
+            let storyboard = UIStoryboard(name: "Arthur", bundle: NSBundle.mainBundle())
+            let vc = storyboard.instantiateInitialViewController()
+            self.presentViewController(vc!, animated: true, completion: nil)
         } else {
             presentNotHomeAlert()
         }

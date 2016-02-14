@@ -52,5 +52,13 @@ class AVSpeechSynthesizerAPI {
         synth.speakUtterance(speechUtterance)
     }
     
+    func closing() {
+        let speechUtterance = AVSpeechUtterance(string: "Thank you, and have a great day!")
+        let voice = AVSpeechSynthesisVoice(language: "en-GB")
+        speechUtterance.pitchMultiplier = 1.75
+        speechUtterance.voice = voice
+        synth.speakUtterance(speechUtterance)
+    }
+    
     
 }

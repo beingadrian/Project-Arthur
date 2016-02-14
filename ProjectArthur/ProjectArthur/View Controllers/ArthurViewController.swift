@@ -108,8 +108,8 @@ extension ArthurViewController: OEEventsObserverDelegate {
         case .HearReportQuery:
             if !affirmation {
                 state = .Finished
+                speechAPI.closing()
                 break
-                // Do finishing stuff here
             }
             state = .Report
             speechAPI.sayReport()
@@ -134,7 +134,11 @@ extension ArthurViewController: AVSpeechSynthesizerDelegate {
             state = .HearReportQuery
         case .Report:
             state = .Finished
-            // Do finishing stuff here
+            speechAPI.closing()
+            
+        case .Finished:
+            //dismiss self 
+            self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         default:
             break
         }
