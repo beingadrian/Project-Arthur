@@ -25,6 +25,23 @@
 		332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610A81C6FD2D3008B8B5C /* OpenEars.framework */; };
 		332610AC1C6FD2D3008B8B5C /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610A91C6FD2D3008B8B5C /* Slt.framework */; };
 		332610AF1C6FD362008B8B5C /* HealthKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */; };
+<<<<<<< HEAD
+		BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */; };
+		BF4072631C6FD66600DA8866 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072621C6FD66600DA8866 /* ArthurViewController.swift */; };
+		BF40726D1C6FE19200DA8866 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726B1C6FE19200DA8866 /* ReportTableViewCell.swift */; };
+		BF40726E1C6FE19200DA8866 /* ReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF40726C1C6FE19200DA8866 /* ReportTableViewCell.xib */; };
+		BF4072701C6FE1C400DA8866 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726F1C6FE1C400DA8866 /* ReportView.swift */; };
+		BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072721C6FE27400DA8866 /* DesignableView.swift */; };
+		BF4072751C6FE49800DA8866 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */; };
+		BF4072781C6FE99B00DA8866 /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4072771C6FE99B00DA8866 /* Arthur.storyboard */; };
+		BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40727A1C6FEB2900DA8866 /* ArthurMainView.swift */; };
+		BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072821C6FFAF000DA8866 /* ReportMainView.swift */; };
+		BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4072861C6FFF5900DA8866 /* ReportMainView.xib */; };
+		BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40728A1C70052400DA8866 /* TopBGImageView.swift */; };
+=======
+		332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */; };
+		332610B31C6FEBCF008B8B5C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B21C6FEBCF008B8B5C /* TestViewController.swift */; };
+>>>>>>> origin/develop
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +99,24 @@
 		332610A81C6FD2D3008B8B5C /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		332610A91C6FD2D3008B8B5C /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAPI.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenEarsAPI.swift; sourceTree = "<group>"; };
+		BF40725C1C6FD57300DA8866 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BF4072621C6FD66600DA8866 /* ArthurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
+		BF40726B1C6FE19200DA8866 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
+		BF40726C1C6FE19200DA8866 /* ReportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportTableViewCell.xib; sourceTree = "<group>"; };
+		BF40726F1C6FE1C400DA8866 /* ReportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		BF4072721C6FE27400DA8866 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		BF4072771C6FE99B00DA8866 /* Arthur.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
+		BF40727A1C6FEB2900DA8866 /* ArthurMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArthurMainView.swift; sourceTree = "<group>"; };
+		BF4072821C6FFAF000DA8866 /* ReportMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMainView.swift; sourceTree = "<group>"; };
+		BF4072861C6FFF5900DA8866 /* ReportMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportMainView.xib; sourceTree = "<group>"; };
+		BF40728A1C70052400DA8866 /* TopBGImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBGImageView.swift; sourceTree = "<group>"; };
+=======
+		332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersAPI.swift; sourceTree = "<group>"; };
+		332610B21C6FEBCF008B8B5C /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+>>>>>>> origin/develop
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				332610AC1C6FD2D3008B8B5C /* Slt.framework in Frameworks */,
+				BF4072751C6FE49800DA8866 /* EstimoteSDK.framework in Frameworks */,
 				332610981C6FD086008B8B5C /* RxCocoa.framework in Frameworks */,
 				332610851C6FCF74008B8B5C /* RealmSwift.framework in Frameworks */,
 				332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */,
@@ -138,14 +174,18 @@
 		332610271C6FCB1F008B8B5C /* ProjectArthur */ = {
 			isa = PBXGroup;
 			children = (
-				3326109A1C6FD0C0008B8B5C /* View Controller */,
 				332610AD1C6FD354008B8B5C /* APIs */,
+				BF4072761C6FE98F00DA8866 /* Storyboards */,
+				BF4072711C6FE26700DA8866 /* Designables */,
+				BF4072641C6FE11500DA8866 /* Views */,
+				BF4072611C6FD65D00DA8866 /* View Controllers */,
 				332610A61C6FD2D3008B8B5C /* Frameworks */,
 				332610281C6FCB1F008B8B5C /* AppDelegate.swift */,
 				3326102C1C6FCB1F008B8B5C /* Main.storyboard */,
 				3326102F1C6FCB1F008B8B5C /* Assets.xcassets */,
 				332610311C6FCB1F008B8B5C /* LaunchScreen.storyboard */,
 				332610341C6FCB1F008B8B5C /* Info.plist */,
+				BF40725C1C6FD57300DA8866 /* Bridging-Header.h */,
 			);
 			path = ProjectArthur;
 			sourceTree = "<group>";
@@ -168,16 +208,21 @@
 			path = ProjectArthurUITests;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
 		3326109A1C6FD0C0008B8B5C /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				332610B21C6FEBCF008B8B5C /* TestViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
 		};
+>>>>>>> origin/develop
 		332610A61C6FD2D3008B8B5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */,
 				332610971C6FD086008B8B5C /* RxCocoa.framework */,
 				332610941C6FD04E008B8B5C /* RxSwift.framework */,
 				332610811C6FCF74008B8B5C /* Realm.framework */,
@@ -193,8 +238,75 @@
 			isa = PBXGroup;
 			children = (
 				332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */,
+<<<<<<< HEAD
+                BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */,
+=======
+				332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */,
+>>>>>>> origin/develop
 			);
 			path = APIs;
+			sourceTree = "<group>";
+		};
+		BF4072611C6FD65D00DA8866 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF4072621C6FD66600DA8866 /* ArthurViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BF4072641C6FE11500DA8866 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF4072891C7004F500DA8866 /* Image Views */,
+				BF4072791C6FEB1500DA8866 /* Main Views */,
+				BF40726A1C6FE19200DA8866 /* Table View Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF40726A1C6FE19200DA8866 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF40726B1C6FE19200DA8866 /* ReportTableViewCell.swift */,
+				BF40726C1C6FE19200DA8866 /* ReportTableViewCell.xib */,
+				BF40726F1C6FE1C400DA8866 /* ReportView.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		BF4072711C6FE26700DA8866 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				BF4072721C6FE27400DA8866 /* DesignableView.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		BF4072761C6FE98F00DA8866 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BF4072771C6FE99B00DA8866 /* Arthur.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BF4072791C6FEB1500DA8866 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF4072861C6FFF5900DA8866 /* ReportMainView.xib */,
+				BF40727A1C6FEB2900DA8866 /* ArthurMainView.swift */,
+				BF4072821C6FFAF000DA8866 /* ReportMainView.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		BF4072891C7004F500DA8866 /* Image Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF40728A1C70052400DA8866 /* TopBGImageView.swift */,
+			);
+			path = "Image Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +415,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */,
+				BF4072781C6FE99B00DA8866 /* Arthur.storyboard in Resources */,
+				BF40726E1C6FE19200DA8866 /* ReportTableViewCell.xib in Resources */,
 				332610331C6FCB1F008B8B5C /* LaunchScreen.storyboard in Resources */,
 				332610AA1C6FD2D3008B8B5C /* AcousticModelEnglish.bundle in Resources */,
 				332610301C6FCB1F008B8B5C /* Assets.xcassets in Resources */,
@@ -347,8 +462,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */,
+=======
+				332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */,
+>>>>>>> origin/develop
 				332610291C6FCB1F008B8B5C /* AppDelegate.swift in Sources */,
+				332610B31C6FEBCF008B8B5C /* TestViewController.swift in Sources */,
 				332610AF1C6FD362008B8B5C /* HealthKitAPI.swift in Sources */,
+				BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */,
+				BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */,
+				BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */,
+				BF4072631C6FD66600DA8866 /* ArthurViewController.swift in Sources */,
+				BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */,
+				BF4072701C6FE1C400DA8866 /* ReportView.swift in Sources */,
+				BF40726D1C6FE19200DA8866 /* ReportTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +616,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -498,6 +627,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theinitiative.ProjectArthur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectArthur/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -505,6 +635,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -515,6 +646,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theinitiative.ProjectArthur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectArthur/Bridging-Header.h";
 			};
 			name = Release;
 		};
