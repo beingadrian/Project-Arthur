@@ -102,14 +102,15 @@ extension ArthurViewController: OEEventsObserverDelegate {
     func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
 //        print("Heard: \(hypothesis.characters.split{$0 == " "}.map(String.init).last)\nRecognitionScore: \(recognitionScore)")
         let heard = hypothesis.characters.split{$0 == " "}.map(String.init).last
+        print(heard)
         let affirmation = affirmativeModel.contains(heard!)
         openEars.stopListening()
         switch state {
         case .HearReportQuery:
             if !affirmation {
                 state = .Finished
+                speechAPI.closing()
                 break
-                // Do finishing stuff here
             }
             state = .Report
             speechAPI.sayReport()
@@ -134,7 +135,11 @@ extension ArthurViewController: AVSpeechSynthesizerDelegate {
             state = .HearReportQuery
         case .Report:
             state = .Finished
-            // Do finishing stuff here
+            speechAPI.closing()
+            
+        case .Finished:
+            //dismiss self 
+            self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         default:
             break
         }
