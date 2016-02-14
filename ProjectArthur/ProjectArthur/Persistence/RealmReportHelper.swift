@@ -74,8 +74,9 @@ class RealmReportHelper {
                 }
                 else {
                     script.appendContentsOf("Your upcoming events are:")
-                    for event in upcomingEvents {
-                        script.appendContentsOf("\(event.title), at \(event.date)... ")
+                    let threeEvents = upcomingEvents.prefix(3)
+                    for event in threeEvents {
+                        script.appendContentsOf("\(event.title), at \(event.date.simpleTimeString()!)... ")
                     }
                 }
                 
