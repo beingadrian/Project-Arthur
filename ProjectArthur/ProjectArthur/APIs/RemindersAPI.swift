@@ -23,7 +23,7 @@ class RemindersAPI {
     
     // MARK: - Properties
     
-    let eventStore = EKEventStore()
+    private let eventStore = EKEventStore()
     
     // MARK: - Authorization
     
