@@ -46,6 +46,9 @@
 		BF50EEEF1C703BAC0079590F /* RealmUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEEE1C703BAC0079590F /* RealmUIState.swift */; };
 		BF50EEF11C705AE30079590F /* RealmReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEF01C705AE30079590F /* RealmReport.swift */; };
 		BF50EEF31C705E4B0079590F /* RealmReportHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEF21C705E4B0079590F /* RealmReportHelper.swift */; };
+		BF50EEF71C708D550079590F /* RealmEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEF61C708D550079590F /* RealmEvent.swift */; };
+		BF50EEF91C708DD60079590F /* RealmQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEF81C708DD60079590F /* RealmQuest.swift */; };
+		BF50EEFB1C708E320079590F /* RealmAdventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEFA1C708E320079590F /* RealmAdventure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +129,9 @@
 		BF50EEEE1C703BAC0079590F /* RealmUIState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUIState.swift; sourceTree = "<group>"; };
 		BF50EEF01C705AE30079590F /* RealmReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmReport.swift; sourceTree = "<group>"; };
 		BF50EEF21C705E4B0079590F /* RealmReportHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmReportHelper.swift; sourceTree = "<group>"; };
+		BF50EEF61C708D550079590F /* RealmEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmEvent.swift; sourceTree = "<group>"; };
+		BF50EEF81C708DD60079590F /* RealmQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuest.swift; sourceTree = "<group>"; };
+		BF50EEFA1C708E320079590F /* RealmAdventure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAdventure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +323,9 @@
 				BF50EEEE1C703BAC0079590F /* RealmUIState.swift */,
 				BF50EEF01C705AE30079590F /* RealmReport.swift */,
 				BF50EEF21C705E4B0079590F /* RealmReportHelper.swift */,
+				BF50EEF61C708D550079590F /* RealmEvent.swift */,
+				BF50EEF81C708DD60079590F /* RealmQuest.swift */,
+				BF50EEFA1C708E320079590F /* RealmAdventure.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -493,14 +502,17 @@
 				BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */,
 				BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */,
 				BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */,
+				BF50EEFB1C708E320079590F /* RealmAdventure.swift in Sources */,
 				BF50EEF31C705E4B0079590F /* RealmReportHelper.swift in Sources */,
 				BF50EEEF1C703BAC0079590F /* RealmUIState.swift in Sources */,
+				BF50EEF71C708D550079590F /* RealmEvent.swift in Sources */,
 				BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */,
 				BF40728F1C700E5300DA8866 /* AVSpeechSynthesizerAPI.swift in Sources */,
 				BF50EEED1C702C900079590F /* RealmCard.swift in Sources */,
 				BF4072701C6FE1C400DA8866 /* ReportView.swift in Sources */,
 				BF50EEF11C705AE30079590F /* RealmReport.swift in Sources */,
 				BF40726D1C6FE19200DA8866 /* ReportTableViewCell.swift in Sources */,
+				BF50EEF91C708DD60079590F /* RealmQuest.swift in Sources */,
 				332610BD1C702B5D008B8B5C /* NotificationsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

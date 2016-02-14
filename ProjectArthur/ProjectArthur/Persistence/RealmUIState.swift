@@ -11,7 +11,7 @@ import RealmSwift
 
 class RealmUIState: Object {
     dynamic var name = ""
-    dynamic var state = [String:AnyObject]() // [String:AnyObject]
+//    dynamic var state = [String:AnyObject]() // [String:AnyObject]
     
     override static func primaryKey() -> String? {
         return "name"

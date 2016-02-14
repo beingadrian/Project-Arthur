@@ -41,7 +41,7 @@ class ArthurMainView: UIView {
                 self.layoutIfNeeded()
             }, completion: { Void in
                 self.idle()
-                self.pulseFromSpeaking()
+//                self.pulseFromSpeaking()
         })
         
     }
