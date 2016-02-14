@@ -17,11 +17,12 @@ class ArthurViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setup()
-//        mainView.speechAPI.speechTest()
-        
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        mainView.loadIn()
+        speechAPI.dailyPrompt()
     }
     
     private func setup() {
@@ -34,7 +35,7 @@ class ArthurViewController: UIViewController {
         
         // Testing:
 //        openEars.startListening()
-        speechAPI.dailyPrompt()
+//        speechAPI.dailyPrompt()
         
     }
     
