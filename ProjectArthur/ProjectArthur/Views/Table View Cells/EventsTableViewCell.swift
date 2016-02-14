@@ -64,6 +64,8 @@ class EventsTableViewCell: UITableViewCell {
         self.backgroundView = nil
         self.backgroundColor = UIColor.clearColor()
         
+        let loadingView = CardLoadingView(superview: self)
+        
         firstEventLabel.hidden = true
         secondEventLabel.hidden = true
         thirdEventLabel.hidden = true
@@ -72,6 +74,7 @@ class EventsTableViewCell: UITableViewCell {
             .observeOn(MainScheduler.instance)
             .subscribeNext { card in
                 self.card = card
+                loadingView.endAnimation()
                 self.onCompletedLoadingData.onNext()
             }
             .addDisposableTo(disposeBag)

@@ -54,11 +54,14 @@ class WalkTableViewCell: UITableViewCell {
         self.backgroundView = nil
         self.backgroundColor = UIColor.clearColor()
         
+        self.loadingView = CardLoadingView(superview: self)
+        
         LoadingAPI().createWalkCard()
             .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: { (card) -> Void in
                     self.card = card
+                    self.loadingView?.endAnimation()
                     self.onCompletedLoadingData.onNext()
                 },
                 onError: { (error) -> Void in

@@ -68,11 +68,14 @@ class QuestTableViewCell: UITableViewCell {
         secondQuestLabel.hidden = true
         thirdQuestLabel.hidden = true
         
+        let loadingView = CardLoadingView(superview: self)
+        
         LoadingAPI().createQuestCard()
             .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: { (card) -> Void in
                     self.card = card
+                    loadingView.endAnimation()
                     self.onCompletedLoadingData.onNext()
                 },
                 onError: { (error) -> Void in

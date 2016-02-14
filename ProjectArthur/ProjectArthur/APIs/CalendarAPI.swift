@@ -67,7 +67,13 @@ class CalendarAPI {
         
         return Observable.create { observer in
             
-            observer.onNext(events)
+            let threeEvents = events.prefix(3)
+            var eventsForNext: [EKEvent] = []
+            threeEvents.forEach { event in
+                eventsForNext.append(event)
+            }
+            
+            observer.onNext(eventsForNext)
             
             return NopDisposable.instance
         }
