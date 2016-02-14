@@ -12,6 +12,9 @@ class QuestTableViewCell: UITableViewCell {
 
     // MARK: - Properties
     
+    @IBOutlet weak var firstQuestLabel: UILabel!
+    @IBOutlet weak var secondQuestLabel: UILabel!
+    @IBOutlet weak var thirdQuestLabel: UILabel!
     
     // MARK: - Awake from nib
     
