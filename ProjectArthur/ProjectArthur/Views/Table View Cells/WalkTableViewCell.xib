@@ -16,17 +16,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="386" height="263.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardLine" translatesAutoresizingMaskIntoConstraints="NO" id="oGr-dS-Usz">
+                        <rect key="frame" x="35" y="68" width="316" height="2"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PathCurve" translatesAutoresizingMaskIntoConstraints="NO" id="2aS-9D-TrO">
+                        <rect key="frame" x="147" y="133" width="143" height="40"/>
+                    </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5v-jU-YmU" customClass="DesignableView" customModule="ProjectArthur" customModuleProvider="target">
                         <rect key="frame" x="27" y="20" width="332" height="223.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Walking Adventure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeD-m5-dQq">
-                                <rect key="frame" x="25" y="25" width="215" height="21.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's walking adventure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeD-m5-dQq">
+                                <rect key="frame" x="25" y="20" width="210.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 more steps than yesterday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbV-62-Hlu">
-                                <rect key="frame" x="25" y="60" width="205" height="17"/>
+                                <rect key="frame" x="25" y="55" width="205" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -66,7 +72,7 @@
                             <constraint firstAttribute="bottom" secondItem="hDz-bW-Us2" secondAttribute="bottom" constant="30" id="Bfy-7S-2os"/>
                             <constraint firstItem="wbV-62-Hlu" firstAttribute="leading" secondItem="oeD-m5-dQq" secondAttribute="leading" id="CAJ-3m-W6L"/>
                             <constraint firstItem="4sN-8I-uYJ" firstAttribute="leading" secondItem="hDz-bW-Us2" secondAttribute="trailing" constant="25" id="UVn-qy-Okj"/>
-                            <constraint firstItem="oeD-m5-dQq" firstAttribute="top" secondItem="G5v-jU-YmU" secondAttribute="top" constant="25" id="WcP-qY-TNZ"/>
+                            <constraint firstItem="oeD-m5-dQq" firstAttribute="top" secondItem="G5v-jU-YmU" secondAttribute="top" constant="20" id="WcP-qY-TNZ"/>
                             <constraint firstAttribute="bottom" secondItem="WnW-hf-feB" secondAttribute="bottom" constant="25" id="YQx-yg-19x"/>
                             <constraint firstItem="WnW-hf-feB" firstAttribute="leading" secondItem="G5v-jU-YmU" secondAttribute="leading" constant="25" id="dg3-lp-RM2"/>
                             <constraint firstItem="wbV-62-Hlu" firstAttribute="top" secondItem="oeD-m5-dQq" secondAttribute="bottom" constant="19" id="e8j-wb-M9p"/>
@@ -100,12 +106,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardLine" translatesAutoresizingMaskIntoConstraints="NO" id="oGr-dS-Usz">
-                        <rect key="frame" x="35" y="73" width="316" height="2"/>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PathCurve" translatesAutoresizingMaskIntoConstraints="NO" id="2aS-9D-TrO">
-                        <rect key="frame" x="147" y="133" width="143" height="40"/>
-                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="oGr-dS-Usz" firstAttribute="centerX" secondItem="h2d-7b-V5w" secondAttribute="centerX" id="4KP-88-te4"/>

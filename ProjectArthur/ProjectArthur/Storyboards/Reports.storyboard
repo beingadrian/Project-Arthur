@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -18,13 +19,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGDark" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-me-z73" customClass="TopBGImageView" customModule="ProjectArthur" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EtE-Ix-zDs">
                                 <rect key="frame" x="0.0" y="199" width="320" height="369"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGDark" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-me-z73" customClass="TopBGImageView" customModule="ProjectArthur" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="730-5V-D7d">
+                                <rect key="frame" x="247" y="495" width="53" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="730-5V-D7d" secondAttribute="height" multiplier="1:1" id="YLT-7Q-l6j"/>
+                                </constraints>
+                                <state key="normal" image="NightMainButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="3.5" height="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -33,8 +52,10 @@
                             <constraint firstItem="7O9-me-z73" firstAttribute="height" secondItem="B1m-WI-Z50" secondAttribute="height" multiplier="0.35" id="PK5-0V-q8L"/>
                             <constraint firstItem="7O9-me-z73" firstAttribute="top" secondItem="B1m-WI-Z50" secondAttribute="top" id="XNY-uf-4pH"/>
                             <constraint firstItem="oYM-Jj-zat" firstAttribute="top" secondItem="EtE-Ix-zDs" secondAttribute="bottom" id="fgW-OU-iZR"/>
+                            <constraint firstAttribute="trailing" secondItem="730-5V-D7d" secondAttribute="trailing" constant="20" id="jbW-rh-nZl"/>
                             <constraint firstItem="EtE-Ix-zDs" firstAttribute="leading" secondItem="B1m-WI-Z50" secondAttribute="leading" id="nIY-Sk-Pg3"/>
                             <constraint firstItem="EtE-Ix-zDs" firstAttribute="top" secondItem="7O9-me-z73" secondAttribute="bottom" id="pTQ-Gd-tJN"/>
+                            <constraint firstItem="oYM-Jj-zat" firstAttribute="top" secondItem="730-5V-D7d" secondAttribute="bottom" constant="20" id="seP-dI-Z1Q"/>
                             <constraint firstAttribute="trailing" secondItem="EtE-Ix-zDs" secondAttribute="trailing" id="sk1-wC-Toj"/>
                         </constraints>
                         <connections>
@@ -53,6 +74,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BGDark" width="320" height="197"/>
+        <image name="BGDark" width="320" height="198"/>
+        <image name="NightMainButton" width="53" height="53"/>
     </resources>
 </document>

@@ -14,6 +14,8 @@ class ReportViewController: UIViewController {
     
     @IBOutlet var mainView: ReportMainView!
     
+    var viewModel: ReportViewModel!
+    
     // MARK: - View did load
     
     override func viewDidLoad() {
@@ -25,6 +27,9 @@ class ReportViewController: UIViewController {
     
     private func setup() {
         
+        self.viewModel = ReportViewModel()
+        
+        // table view setup
         self.mainView.reportTableView.delegate = self
         self.mainView.reportTableView.dataSource = self
         
@@ -52,7 +57,7 @@ extension ReportViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return viewModel.cards.count
         
     }
     
@@ -60,6 +65,8 @@ extension ReportViewController: UITableViewDataSource {
         
         let nib = UINib(nibName: "WalkTableViewCell", bundle: nil)
         let cell = nib.instantiateWithOwner(self, options: nil).first as! WalkTableViewCell
+        
+        cell.card = viewModel.cards[indexPath.row]
         
         return cell
         

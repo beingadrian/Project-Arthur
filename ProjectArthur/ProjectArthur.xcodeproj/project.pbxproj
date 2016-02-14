@@ -35,6 +35,9 @@
 		332610C71C707E7E008B8B5C /* QuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610C51C707E7E008B8B5C /* QuestTableViewCell.swift */; };
 		332610C81C707E7E008B8B5C /* QuestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332610C61C707E7E008B8B5C /* QuestTableViewCell.xib */; };
 		332610CA1C707EDA008B8B5C /* ReportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610C91C707EDA008B8B5C /* ReportMainView.swift */; };
+		332610CD1C70823E008B8B5C /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610CC1C70823E008B8B5C /* ReportViewModel.swift */; };
+		332610CF1C70880A008B8B5C /* LoadingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610CE1C70880A008B8B5C /* LoadingAPI.swift */; };
+		332610D21C708DF9008B8B5C /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610D11C708DF9008B8B5C /* NSDate+Extension.swift */; };
 		BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */; };
 		BF40726D1C6FE19200DA8866 /* WalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726B1C6FE19200DA8866 /* WalkTableViewCell.swift */; };
 		BF40726E1C6FE19200DA8866 /* WalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF40726C1C6FE19200DA8866 /* WalkTableViewCell.xib */; };
@@ -116,6 +119,9 @@
 		332610C51C707E7E008B8B5C /* QuestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestTableViewCell.swift; sourceTree = "<group>"; };
 		332610C61C707E7E008B8B5C /* QuestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestTableViewCell.xib; sourceTree = "<group>"; };
 		332610C91C707EDA008B8B5C /* ReportMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMainView.swift; sourceTree = "<group>"; };
+		332610CC1C70823E008B8B5C /* ReportViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
+		332610CE1C70880A008B8B5C /* LoadingAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAPI.swift; sourceTree = "<group>"; };
+		332610D11C708DF9008B8B5C /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenEarsAPI.swift; sourceTree = "<group>"; };
 		BF40725C1C6FD57300DA8866 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		BF40726B1C6FE19200DA8866 /* WalkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkTableViewCell.swift; sourceTree = "<group>"; };
@@ -193,7 +199,9 @@
 				BF4072761C6FE98F00DA8866 /* Storyboards */,
 				BF4072711C6FE26700DA8866 /* Designables */,
 				BF4072641C6FE11500DA8866 /* Views */,
+				332610CB1C70822F008B8B5C /* View Models */,
 				BF4072611C6FD65D00DA8866 /* View Controllers */,
+				332610D01C708DE6008B8B5C /* Extensions */,
 				332610A61C6FD2D3008B8B5C /* Frameworks */,
 				332610281C6FCB1F008B8B5C /* AppDelegate.swift */,
 				3326102C1C6FCB1F008B8B5C /* Main.storyboard */,
@@ -247,8 +255,25 @@
 				BF40728E1C700E5300DA8866 /* AVSpeechSynthesizerAPI.swift */,
 				332610B41C7009CA008B8B5C /* CalendarAPI.swift */,
 				332610BC1C702B5D008B8B5C /* NotificationsAPI.swift */,
+				332610CE1C70880A008B8B5C /* LoadingAPI.swift */,
 			);
 			path = APIs;
+			sourceTree = "<group>";
+		};
+		332610CB1C70822F008B8B5C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				332610CC1C70823E008B8B5C /* ReportViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		332610D01C708DE6008B8B5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				332610D11C708DF9008B8B5C /* NSDate+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BF4072611C6FD65D00DA8866 /* View Controllers */ = {
@@ -494,6 +519,7 @@
 				BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */,
 				332610C41C7073BE008B8B5C /* ReportViewController.swift in Sources */,
 				332610CA1C707EDA008B8B5C /* ReportMainView.swift in Sources */,
+				332610D21C708DF9008B8B5C /* NSDate+Extension.swift in Sources */,
 				332610B71C700F8F008B8B5C /* ArthurViewController.swift in Sources */,
 				332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */,
 				332610291C6FCB1F008B8B5C /* AppDelegate.swift in Sources */,
@@ -502,7 +528,9 @@
 				BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */,
 				BF50EEF31C705E4B0079590F /* RealmReportHelper.swift in Sources */,
 				BF50EEEF1C703BAC0079590F /* RealmUIState.swift in Sources */,
+				332610CD1C70823E008B8B5C /* ReportViewModel.swift in Sources */,
 				332610C71C707E7E008B8B5C /* QuestTableViewCell.swift in Sources */,
+				332610CF1C70880A008B8B5C /* LoadingAPI.swift in Sources */,
 				BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */,
 				BF40728F1C700E5300DA8866 /* AVSpeechSynthesizerAPI.swift in Sources */,
 				BF50EEED1C702C900079590F /* RealmCard.swift in Sources */,
