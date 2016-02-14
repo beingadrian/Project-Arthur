@@ -18,8 +18,8 @@ class RealmCard: Object {
     let quests = List<RealmQuest>()
     let events = List<RealmEvent>()
     
-    override static func primaryKey() -> String? {
-        return "name"
-    }
+//    override static func primaryKey() -> String? {
+//        return "name"
+//    }
     
 }

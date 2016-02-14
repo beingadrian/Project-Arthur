@@ -55,7 +55,7 @@ class WalkTableViewCell: UITableViewCell {
         self.backgroundColor = UIColor.clearColor()
         
         LoadingAPI().createWalkCard()
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: { (card) -> Void in
                     self.card = card

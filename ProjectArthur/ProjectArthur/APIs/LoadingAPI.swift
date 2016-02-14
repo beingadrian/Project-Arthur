@@ -42,10 +42,8 @@ class LoadingAPI {
                 card.name = "Adventures"
                 card.adventure = adventure
                 
-                let realm = try! Realm()
-                try! realm.write {
-                    realm.add(adventure)
-                    realm.add(card, update: true)
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.realmHelper.addCardToReport(card)
                 }
                 
                 self.realmHelper.addCardToReport(card)
@@ -64,7 +62,7 @@ class LoadingAPI {
         return remindersAPI.fetchCompletedReminders(fromDate: twelveHoursAgo, toDate: now)
             .flatMap { reminders -> Observable<RealmCard> in
                 let card = RealmCard()
-                card.name = "Quest card"
+                card.name = "Quests"
                 
                 let sliced = reminders.prefix(3)
                 var quests: [RealmQuest] = []
@@ -76,9 +74,8 @@ class LoadingAPI {
                 
                 card.quests.appendContentsOf(quests)
                 
-                let realm = try! Realm()
-                try! realm.write {
-                    realm.add(card, update: true)
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.realmHelper.addCardToReport(card)
                 }
                 
                 self.realmHelper.addCardToReport(card)
@@ -101,12 +98,11 @@ class LoadingAPI {
                     realmEvents.append(realmEvent)
                 }
                 let card = RealmCard()
-                card.name = "Events card"
+                card.name = "Events"
                 card.events.appendContentsOf(realmEvents)
                 
-                let realm = try! Realm()
-                try! realm.write {
-                    realm.add(card, update: true)
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.realmHelper.addCardToReport(card)
                 }
                 
                 self.realmHelper.addCardToReport(card)

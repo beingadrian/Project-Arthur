@@ -69,6 +69,7 @@ class QuestTableViewCell: UITableViewCell {
         thirdQuestLabel.hidden = true
         
         LoadingAPI().createQuestCard()
+            .observeOn(MainScheduler.instance)
             .subscribe(
                 onNext: { (card) -> Void in
                     self.card = card

@@ -69,6 +69,7 @@ class EventsTableViewCell: UITableViewCell {
         thirdEventLabel.hidden = true
         
         LoadingAPI().createEventsCard()
+            .observeOn(MainScheduler.instance)
             .subscribeNext { card in
                 self.card = card
                 self.onCompletedLoadingData.onNext()

@@ -52,29 +52,30 @@ class RealmReportHelper {
         for card in report.cards {
             switch card.name {
             case "Adventures":
-                script.appendContentsOf("You have walked \(String(card.adventure!.steps)) steps, and you have traveled \(String(card.adventure!.distance)) miles.")
+                let rounded = round(100 * card.adventure!.distance) / 100
+                script.appendContentsOf("You have walked \(String(card.adventure!.steps)) steps, and you have traveled \(String(rounded)) miles...")
             
             case "Quests":
                 let accomplishedQuests = card.quests
                 if accomplishedQuests.count == 0 {
-                    script.appendContentsOf("You have accomplished no quests today.")
+                    script.appendContentsOf("You have accomplished no quests today...")
                 }
                 else {
                     script.appendContentsOf("Today you have accomplished:")
                     for quest in accomplishedQuests {
-                        script.appendContentsOf("\(quest.title). ")
+                        script.appendContentsOf("\(quest.title)... ")
                     }
                 }
             
             case "Events":
                 let upcomingEvents = card.events
                 if upcomingEvents.count == 0 {
-                    script.appendContentsOf("You have no upcoming events.")
+                    script.appendContentsOf("You have no upcoming events...")
                 }
                 else {
                     script.appendContentsOf("Your upcoming events are:")
                     for event in upcomingEvents {
-                        script.appendContentsOf("\(event.title), at \(event.date). ")
+                        script.appendContentsOf("\(event.title), at \(event.date)... ")
                     }
                 }
                 
