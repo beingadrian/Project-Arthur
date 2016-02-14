@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Night main button.png",
+      "filename" : "Main button night.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Night main button@2x.png",
+      "filename" : "Main button night@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Night main button@3x.png",
+      "filename" : "Main button night@3x.png",
       "scale" : "3x"
     }
   ],

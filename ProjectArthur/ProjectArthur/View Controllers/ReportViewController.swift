@@ -46,18 +46,20 @@ class ReportViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
-//        HealthKitAPI().requestHealthKitPermissions()
-//            .subscribeOn(MainScheduler.instance)
-//            .subscribe(
-//                onNext: { (success) -> Void in
-//                    self.mainView.reportTableView.reloadData()
-//                },
-//                onError: { (error) -> Void in
-//                    print("Error requesting error \(error)")
-//                },
-//                onCompleted: nil,
-//                onDisposed: nil)
-//            .addDisposableTo(disposeBag)
+        HealthKitAPI().requestHealthKitPermissions()
+            .subscribeOn(MainScheduler.instance)
+            .subscribe(
+                onNext: { (success) -> Void in
+                    self.mainView.reportTableView.reloadData()
+                },
+                onError: { (error) -> Void in
+                    print("Error requesting error \(error)")
+                },
+                onCompleted: nil,
+                onDisposed: nil)
+            .addDisposableTo(disposeBag)
+        
+        self.mainView.reportTableView.reloadData()
         
     }
     
@@ -114,6 +116,15 @@ extension ReportViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = viewModel.cells[indexPath.row]
+        
+        if let cel = cell as? LazyLoader {
+            cel.onCompletedLoadingData
+                .observeOn(MainScheduler.instance)
+                .subscribeNext {
+                    self.mainView.reportTableView.reloadData()
+                }
+                .addDisposableTo(disposeBag)
+        }
         
         return cell
         

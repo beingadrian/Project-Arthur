@@ -54,6 +54,8 @@ class EventsTableViewCell: UITableViewCell {
         }
     }
     
+    var onCompletedLoadingData = PublishSubject<Void>()
+    
     // MARK: - Awake from nib
     
     override func awakeFromNib() {
@@ -69,9 +71,12 @@ class EventsTableViewCell: UITableViewCell {
         LoadingAPI().createEventsCard()
             .subscribeNext { card in
                 self.card = card
+                self.onCompletedLoadingData.onNext()
             }
             .addDisposableTo(disposeBag)
         
     }
     
 }
+
+extension EventsTableViewCell: LazyLoader {}

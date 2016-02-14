@@ -54,6 +54,8 @@ class QuestTableViewCell: UITableViewCell {
         }
     }
     
+    var onCompletedLoadingData = PublishSubject<Void>()
+    
     // MARK: - Awake from nib
     
     override func awakeFromNib() {
@@ -70,6 +72,7 @@ class QuestTableViewCell: UITableViewCell {
             .subscribe(
                 onNext: { (card) -> Void in
                     self.card = card
+                    self.onCompletedLoadingData.onNext()
                 },
                 onError: { (error) -> Void in
                     print("Error creating quest card: \(error)")
@@ -81,3 +84,5 @@ class QuestTableViewCell: UITableViewCell {
     }
     
 }
+
+extension QuestTableViewCell: LazyLoader {}
