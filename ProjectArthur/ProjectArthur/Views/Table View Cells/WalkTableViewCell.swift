@@ -23,18 +23,16 @@ class WalkTableViewCell: UITableViewCell {
                 return
             }
             
-            guard let description = card.values["description"] as? String else { return }
+            let description = card.content
             self.descriptionLabel.text = description
             
             let formatter = NSNumberFormatter()
             formatter.numberStyle = .DecimalStyle
             
-            guard let steps = card.values["steps"] as? Double else { return }
+            let steps = card.adventure!.steps
             self.stepCountLabel.text = formatter.stringFromNumber(steps)
             
-            guard let distance = card.values["distance"] as? Double else {
-                return
-            }
+            let distance = card.adventure!.miles
             self.distanceLabel.text = formatter.stringFromNumber(distance)
             
         }
