@@ -10,7 +10,6 @@ import Foundation
 import NotificationCenter
 import UIKit
 
-
 class NotificationAPI {
     
     // MARK: - Properties

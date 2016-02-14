@@ -31,6 +31,7 @@
 		332610BB1C702A7F008B8B5C /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332610BA1C702A7F008B8B5C /* Arthur.storyboard */; };
 		332610BD1C702B5D008B8B5C /* NotificationsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610BC1C702B5D008B8B5C /* NotificationsAPI.swift */; };
 		332610BF1C7033C0008B8B5C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610BE1C7033C0008B8B5C /* HealthKit.framework */; };
+		332610C21C703E7A008B8B5C /* Reports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332610C11C703E7A008B8B5C /* Reports.storyboard */; };
 		BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */; };
 		BF40726D1C6FE19200DA8866 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726B1C6FE19200DA8866 /* ReportTableViewCell.swift */; };
 		BF40726E1C6FE19200DA8866 /* ReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF40726C1C6FE19200DA8866 /* ReportTableViewCell.xib */; };
@@ -108,6 +109,7 @@
 		332610BC1C702B5D008B8B5C /* NotificationsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsAPI.swift; sourceTree = "<group>"; };
 		332610BE1C7033C0008B8B5C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		332610C01C7033C0008B8B5C /* ProjectArthur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ProjectArthur.entitlements; sourceTree = "<group>"; };
+		332610C11C703E7A008B8B5C /* Reports.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reports.storyboard; sourceTree = "<group>"; };
 		BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenEarsAPI.swift; sourceTree = "<group>"; };
 		BF40725C1C6FD57300DA8866 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		BF40726B1C6FE19200DA8866 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				332610BA1C702A7F008B8B5C /* Arthur.storyboard */,
+				332610C11C703E7A008B8B5C /* Reports.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332610C21C703E7A008B8B5C /* Reports.storyboard in Resources */,
 				BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */,
 				332610BB1C702A7F008B8B5C /* Arthur.storyboard in Resources */,
 				BF40726E1C6FE19200DA8866 /* ReportTableViewCell.xib in Resources */,
