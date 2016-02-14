@@ -7,13 +7,10 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ArthurMainView: UIView {
 
+    let speechAPI = AVSpeechSynthesizerAPI()
     
-    func audio() {
-
-    }
 
 }

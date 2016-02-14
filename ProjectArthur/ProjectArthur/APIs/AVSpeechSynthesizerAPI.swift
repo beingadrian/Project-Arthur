@@ -27,7 +27,10 @@ class AVSpeechSynthesizerAPI {
 //    }
     
     func speechTest() {
-//        let utter = AVUt
+        let speechUtterance = AVSpeechUtterance(string: "There is no absolute rule: very short or long paragraphs can work when used by an experienced writer. However, as a guideline, paragraphs should usually be no less that 2 or 3 sentences long and there should be 2 or 3 paragraphs per page of A4.")
+        speechUtterance.voice = AVSpeechSynthesisVoice(identifier: AVSpeechSynthesisVoiceIdentifierAlex)
+        print(speechUtterance.voice)
+        synth.speakUtterance(speechUtterance)
     }
     
     

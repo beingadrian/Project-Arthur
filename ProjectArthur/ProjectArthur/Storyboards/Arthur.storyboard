@@ -40,6 +40,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mainView" destination="GDh-ra-lI5" id="K57-nT-IfD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnY-UJ-1vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
