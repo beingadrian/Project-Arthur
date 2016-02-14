@@ -19,15 +19,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGDark" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-me-z73" customClass="TopBGImageView" customModule="ProjectArthur" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EtE-Ix-zDs">
-                                <rect key="frame" x="0.0" y="199" width="320" height="369"/>
+                                <rect key="frame" x="0.0" y="179" width="320" height="389"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="730-5V-D7d">
-                                <rect key="frame" x="247" y="495" width="53" height="53"/>
+                                <rect key="frame" x="236" y="484" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="730-5V-D7d" secondAttribute="height" multiplier="1:1" id="YLT-7Q-l6j"/>
                                 </constraints>
@@ -44,13 +41,17 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGDark" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-me-z73" customClass="TopBGImageView" customModule="ProjectArthur" customModuleProvider="target">
+                                <rect key="frame" x="-20" y="-20" width="360" height="199"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="7O9-me-z73" secondAttribute="trailing" id="3hg-bm-Ee7"/>
-                            <constraint firstItem="7O9-me-z73" firstAttribute="leading" secondItem="B1m-WI-Z50" secondAttribute="leading" id="J0w-h1-HgS"/>
+                            <constraint firstAttribute="trailing" secondItem="7O9-me-z73" secondAttribute="trailing" constant="-20" id="3hg-bm-Ee7"/>
+                            <constraint firstItem="730-5V-D7d" firstAttribute="width" secondItem="B1m-WI-Z50" secondAttribute="width" multiplier="0.2" id="Ilr-1j-807"/>
+                            <constraint firstItem="7O9-me-z73" firstAttribute="leading" secondItem="B1m-WI-Z50" secondAttribute="leading" constant="-20" id="J0w-h1-HgS"/>
                             <constraint firstItem="7O9-me-z73" firstAttribute="height" secondItem="B1m-WI-Z50" secondAttribute="height" multiplier="0.35" id="PK5-0V-q8L"/>
-                            <constraint firstItem="7O9-me-z73" firstAttribute="top" secondItem="B1m-WI-Z50" secondAttribute="top" id="XNY-uf-4pH"/>
+                            <constraint firstItem="7O9-me-z73" firstAttribute="top" secondItem="B1m-WI-Z50" secondAttribute="top" constant="-20" id="XNY-uf-4pH"/>
                             <constraint firstItem="oYM-Jj-zat" firstAttribute="top" secondItem="EtE-Ix-zDs" secondAttribute="bottom" id="fgW-OU-iZR"/>
                             <constraint firstAttribute="trailing" secondItem="730-5V-D7d" secondAttribute="trailing" constant="20" id="jbW-rh-nZl"/>
                             <constraint firstItem="EtE-Ix-zDs" firstAttribute="leading" secondItem="B1m-WI-Z50" secondAttribute="leading" id="nIY-Sk-Pg3"/>
