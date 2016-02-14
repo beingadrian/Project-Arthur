@@ -52,7 +52,7 @@ class RealmReportHelper {
         for card in report.cards {
             switch card.name {
             case "Adventures":
-                script.appendContentsOf("You have walked \(String(card.adventure!.steps)) steps, and you have traveled \(String(card.adventure!.miles)) miles.")
+                script.appendContentsOf("You have walked \(String(card.adventure!.steps)) steps, and you have traveled \(String(card.adventure!.distance)) miles.")
             
             case "Quests":
                 let accomplishedQuests = card.quests

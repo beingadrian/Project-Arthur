@@ -15,13 +15,28 @@ class ReportViewModel {
     
     // MARK: - Properties
     
-    var cards: [RealmCard] = []
+    var owner: UIViewController
+    
+    var cells: [UITableViewCell] = []
     
     // MARK: - Initialization
     
-    init() {
+    init(owner: UIViewController) {
         
+        self.owner = owner
         
+        let walkNib = UINib(nibName: "WalkTableViewCell", bundle: nil)
+        let walkCell = walkNib.instantiateWithOwner(owner, options: nil).first as! WalkTableViewCell
+        
+        let questNib = UINib(nibName: "QuestTableViewCell", bundle: nil)
+        let questCell = questNib.instantiateWithOwner(owner, options: nil).first as! QuestTableViewCell
+        
+        let eventsNib = UINib(nibName: "EventsTableViewCell", bundle: nil)
+        let eventsCell = eventsNib.instantiateWithOwner(owner, options: nil).first as! EventsTableViewCell
+        
+        cells.append(walkCell)
+        cells.append(questCell)
+        cells.append(eventsCell)
         
     }
     
