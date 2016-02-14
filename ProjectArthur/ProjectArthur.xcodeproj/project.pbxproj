@@ -33,6 +33,9 @@
 		BF4072751C6FE49800DA8866 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */; };
 		BF4072781C6FE99B00DA8866 /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4072771C6FE99B00DA8866 /* Arthur.storyboard */; };
 		BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40727A1C6FEB2900DA8866 /* ArthurMainView.swift */; };
+		BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072821C6FFAF000DA8866 /* ReportMainView.swift */; };
+		BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4072861C6FFF5900DA8866 /* ReportMainView.xib */; };
+		BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40728A1C70052400DA8866 /* TopBGImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 		BF4072771C6FE99B00DA8866 /* Arthur.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
 		BF40727A1C6FEB2900DA8866 /* ArthurMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArthurMainView.swift; sourceTree = "<group>"; };
+		BF4072821C6FFAF000DA8866 /* ReportMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMainView.swift; sourceTree = "<group>"; };
+		BF4072861C6FFF5900DA8866 /* ReportMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportMainView.xib; sourceTree = "<group>"; };
+		BF40728A1C70052400DA8866 /* TopBGImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBGImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +230,7 @@
 		BF4072641C6FE11500DA8866 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF4072891C7004F500DA8866 /* Image Views */,
 				BF4072791C6FEB1500DA8866 /* Main Views */,
 				BF40726A1C6FE19200DA8866 /* Table View Cells */,
 			);
@@ -259,9 +266,19 @@
 		BF4072791C6FEB1500DA8866 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF4072861C6FFF5900DA8866 /* ReportMainView.xib */,
 				BF40727A1C6FEB2900DA8866 /* ArthurMainView.swift */,
+				BF4072821C6FFAF000DA8866 /* ReportMainView.swift */,
 			);
 			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		BF4072891C7004F500DA8866 /* Image Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF40728A1C70052400DA8866 /* TopBGImageView.swift */,
+			);
+			path = "Image Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */,
 				BF4072781C6FE99B00DA8866 /* Arthur.storyboard in Resources */,
 				BF40726E1C6FE19200DA8866 /* ReportTableViewCell.xib in Resources */,
 				332610331C6FCB1F008B8B5C /* LaunchScreen.storyboard in Resources */,
@@ -416,9 +434,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */,
 				332610291C6FCB1F008B8B5C /* AppDelegate.swift in Sources */,
 				BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */,
 				BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */,
+				BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */,
 				BF4072631C6FD66600DA8866 /* ArthurViewController.swift in Sources */,
 				BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */,
 				BF4072701C6FE1C400DA8866 /* ReportView.swift in Sources */,

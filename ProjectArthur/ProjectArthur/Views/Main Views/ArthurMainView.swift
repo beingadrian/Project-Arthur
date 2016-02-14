@@ -8,12 +8,13 @@
 
 import UIKit
 import AVFoundation
+import AudioKit
 
 class ArthurMainView: UIView {
 
     
     func audio() {
-        AVAudioSession.sharedInstance().outputLatency
+
     }
 
 }
