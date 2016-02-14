@@ -8,13 +8,15 @@
 
 import Foundation
 import RealmSwift
+import EventKit
 
 class RealmCard: Object {
     dynamic var name = ""
     dynamic var enabled = true
     dynamic var content = ""
-    dynamic var values = [String:AnyObject]() // [String:AnyObject]
-    dynamic var settings = [String:AnyObject]() // [String:AnyObject]
+    dynamic var adventure: RealmAdventure?
+    let quests = List<RealmQuest>()
+    let events = List<RealmEvent>()
     
     override static func primaryKey() -> String? {
         return "name"

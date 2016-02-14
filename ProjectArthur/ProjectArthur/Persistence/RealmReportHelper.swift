@@ -52,10 +52,10 @@ class RealmReportHelper {
         for card in report.cards {
             switch card.name {
             case "Adventures":
-                script.appendContentsOf("You have walked \(String(card.values["steps"])) steps, and you have traveled \(String(card.values["miles"])) miles.")
+                script.appendContentsOf("You have walked \(String(card.adventure!.steps)) steps, and you have traveled \(String(card.adventure!.miles)) miles.")
             
             case "Quests":
-                let accomplishedQuests = card.values["quests"] as! Array<EKReminder>
+                let accomplishedQuests = card.quests
                 if accomplishedQuests.count == 0 {
                     script.appendContentsOf("You have accomplished no quests today.")
                 }
@@ -67,14 +67,14 @@ class RealmReportHelper {
                 }
             
             case "Events":
-                let upcomingEvents = card.values["events"] as! Array<EKEvent>
+                let upcomingEvents = card.events
                 if upcomingEvents.count == 0 {
                     script.appendContentsOf("You have no upcoming events.")
                 }
                 else {
                     script.appendContentsOf("Your upcoming events are:")
                     for event in upcomingEvents {
-                        script.appendContentsOf("\(event.title). ")
+                        script.appendContentsOf("\(event.title), at \(event.date). ")
                     }
                 }
                 

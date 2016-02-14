@@ -10,18 +10,29 @@ import UIKit
 
 class ArthurViewController: UIViewController {
     
-    var openEars: OpenEarsAPI!
-    var speechAPI: AVSpeechSynthesizerAPI!
+    private var openEars: OpenEarsAPI!
+    private var speechAPI: AVSpeechSynthesizerAPI!
+    
+    private enum State {
+        case Introduction
+        case HearReportQuery
+        case Report
+        case Music
+        case Finished
+    }
+    
+    private var state = State.Introduction
     
     @IBOutlet weak var mainView: ArthurMainView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setup()
-//        mainView.speechAPI.speechTest()
-        
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        mainView.loadIn()
+        speechAPI.dailyPrompt()
     }
     
     private func setup() {
@@ -34,7 +45,7 @@ class ArthurViewController: UIViewController {
         
         // Testing:
 //        openEars.startListening()
-        speechAPI.dailyPrompt()
+//        speechAPI.dailyPrompt()
         
     }
     
@@ -91,11 +102,19 @@ extension ArthurViewController: OEEventsObserverDelegate {
     func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
 //        print("Heard: \(hypothesis.characters.split{$0 == " "}.map(String.init).last)\nRecognitionScore: \(recognitionScore)")
         let heard = hypothesis.characters.split{$0 == " "}.map(String.init).last
-        if affirmativeModel.contains(heard!) {
-            print("Yes")
-        }
-        else {
-            print("No")
+        let affirmation = affirmativeModel.contains(heard!)
+        openEars.stopListening()
+        switch state {
+        case .HearReportQuery:
+            if !affirmation {
+                state = .Finished
+                break
+                // Do finishing stuff here
+            }
+            state = .Report
+            speechAPI.sayReport()
+        default:
+            break
         }
     }
     
@@ -103,5 +122,22 @@ extension ArthurViewController: OEEventsObserverDelegate {
 
 extension ArthurViewController: AVSpeechSynthesizerDelegate {
     
+    func speechSynthesizer(synthesizer: AVSpeechSynthesizer, didStartSpeechUtterance utterance: AVSpeechUtterance) {
+        mainView.pulseFromSpeaking()
+    }
+    
+    func speechSynthesizer(synthesizer: AVSpeechSynthesizer, didFinishSpeechUtterance utterance: AVSpeechUtterance) {
+        mainView.stopPulseFromSpeaking()
+        switch state {
+        case .Introduction:
+            openEars.startListening()
+            state = .HearReportQuery
+        case .Report:
+            state = .Finished
+            // Do finishing stuff here
+        default:
+            break
+        }
+    }
 }
 
