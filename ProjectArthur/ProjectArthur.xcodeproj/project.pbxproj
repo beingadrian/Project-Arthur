@@ -25,6 +25,8 @@
 		332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610A81C6FD2D3008B8B5C /* OpenEars.framework */; };
 		332610AC1C6FD2D3008B8B5C /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610A91C6FD2D3008B8B5C /* Slt.framework */; };
 		332610AF1C6FD362008B8B5C /* HealthKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */; };
+		332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */; };
+		332610B51C7009CA008B8B5C /* CalendarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B41C7009CA008B8B5C /* CalendarAPI.swift */; };
 		BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */; };
 		BF4072631C6FD66600DA8866 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072621C6FD66600DA8866 /* ArthurViewController.swift */; };
 		BF40726D1C6FE19200DA8866 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726B1C6FE19200DA8866 /* ReportTableViewCell.swift */; };
@@ -37,8 +39,6 @@
 		BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072821C6FFAF000DA8866 /* ReportMainView.swift */; };
 		BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4072861C6FFF5900DA8866 /* ReportMainView.xib */; };
 		BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40728A1C70052400DA8866 /* TopBGImageView.swift */; };
-		332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */; };
-		332610B31C6FEBCF008B8B5C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B21C6FEBCF008B8B5C /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +96,8 @@
 		332610A81C6FD2D3008B8B5C /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		332610A91C6FD2D3008B8B5C /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAPI.swift; sourceTree = "<group>"; };
+		332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersAPI.swift; sourceTree = "<group>"; };
+		332610B41C7009CA008B8B5C /* CalendarAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarAPI.swift; sourceTree = "<group>"; };
 		BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenEarsAPI.swift; sourceTree = "<group>"; };
 		BF40725C1C6FD57300DA8866 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		BF4072621C6FD66600DA8866 /* ArthurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
@@ -109,8 +111,6 @@
 		BF4072821C6FFAF000DA8866 /* ReportMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMainView.swift; sourceTree = "<group>"; };
 		BF4072861C6FFF5900DA8866 /* ReportMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportMainView.xib; sourceTree = "<group>"; };
 		BF40728A1C70052400DA8866 /* TopBGImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBGImageView.swift; sourceTree = "<group>"; };
-		332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersAPI.swift; sourceTree = "<group>"; };
-		332610B21C6FEBCF008B8B5C /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,14 +202,6 @@
 			path = ProjectArthurUITests;
 			sourceTree = "<group>";
 		};
-		3326109A1C6FD0C0008B8B5C /* View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				332610B21C6FEBCF008B8B5C /* TestViewController.swift */,
-			);
-			path = "View Controller";
-			sourceTree = "<group>";
-		};
 		332610A61C6FD2D3008B8B5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +221,9 @@
 			isa = PBXGroup;
 			children = (
 				332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */,
-                BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */,
+				BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */,
 				332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */,
+				332610B41C7009CA008B8B5C /* CalendarAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -450,10 +443,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332610B51C7009CA008B8B5C /* CalendarAPI.swift in Sources */,
 				BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */,
 				332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */,
 				332610291C6FCB1F008B8B5C /* AppDelegate.swift in Sources */,
-				332610B31C6FEBCF008B8B5C /* TestViewController.swift in Sources */,
 				332610AF1C6FD362008B8B5C /* HealthKitAPI.swift in Sources */,
 				BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */,
 				BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */,
