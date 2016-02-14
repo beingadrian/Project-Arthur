@@ -13,6 +13,8 @@ class ReportViewController: UIViewController {
 
     var disposeBag = DisposeBag()
     
+    let realmHelper = RealmReportHelper()
+    
     // MARK: - Properties
     
     @IBOutlet var mainView: ReportMainView!
@@ -59,13 +61,27 @@ class ReportViewController: UIViewController {
                 onDisposed: nil)
             .addDisposableTo(disposeBag)
         
-        self.mainView.reportTableView.reloadData()
+        RemindersAPI().requestAccessToReminders()
+            .subscribe(
+                onNext: { (success) -> Void in
+                    print("Success: \(success)")
+                },
+                onError: { (error) -> Void in
+                    print("Error requesting error \(error)")
+                },
+                onCompleted: nil,
+                onDisposed: nil)
+            .addDisposableTo(disposeBag)
+        
+        
         
     }
     
     private func setup() {
         
         self.viewModel = ReportViewModel(owner: self)
+        
+        realmHelper.prepareForReportGeneration()
         
         // table view setup
         self.mainView.reportTableView.delegate = self

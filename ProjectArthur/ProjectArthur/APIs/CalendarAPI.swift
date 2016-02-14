@@ -15,6 +15,8 @@ class CalendarAPI {
     
     enum Error: ErrorType {
         case DateError
+        case RequestAccessError(error: NSError?)
+        case RequestAccessNotGranted
     }
     
     // MARK: - Properties
@@ -22,6 +24,31 @@ class CalendarAPI {
     private let eventStore = EKEventStore()
     
     // MARK: - Event fetching
+    
+    func requestAccessToCalendar() -> Observable<Bool> {
+        
+        return Observable.create { observer in
+            
+            self.eventStore.requestAccessToEntityType(.Event) {
+                (granted, error) in
+                
+                if let error = error {
+                    observer.onError(Error.RequestAccessError(error: error))
+                }
+                
+                if granted {
+                    observer.onNext(granted)
+                    observer.onCompleted()
+                } else {
+                    observer.onError(Error.RequestAccessNotGranted)
+                }
+                
+            }
+            
+            return NopDisposable.instance
+        }
+        
+    }
     
     func fetchEventsForTonight(eventCount: Int) -> Observable<[EKEvent]> {
         
