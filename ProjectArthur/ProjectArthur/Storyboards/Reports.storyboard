@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X6R-FH-JUf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Report View Controller-->
+        <scene sceneID="2kS-3c-ve3">
+            <objects>
+                <viewController id="X6R-FH-JUf" customClass="ReportViewController" customModule="ProjectArthur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4fk-Nf-l2i"/>
+                        <viewControllerLayoutGuide type="bottom" id="oYM-Jj-zat"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B1m-WI-Z50" customClass="ReportMainView" customModule="ProjectArthur" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EtE-Ix-zDs">
+                                <rect key="frame" x="0.0" y="194" width="320" height="374"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="730-5V-D7d">
+                                <rect key="frame" x="236" y="484" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="730-5V-D7d" secondAttribute="height" multiplier="1:1" id="YLT-7Q-l6j"/>
+                                </constraints>
+                                <state key="normal" image="NightMainButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="3.5" height="3.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="arthurButtonTapped:" destination="X6R-FH-JUf" eventType="touchUpInside" id="RGs-wE-uEf"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGDark" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-me-z73" customClass="TopBGImageView" customModule="ProjectArthur" customModuleProvider="target">
+                                <rect key="frame" x="-5" y="-5" width="330" height="199"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7O9-me-z73" secondAttribute="trailing" constant="-5" id="3hg-bm-Ee7"/>
+                            <constraint firstItem="730-5V-D7d" firstAttribute="width" secondItem="B1m-WI-Z50" secondAttribute="width" multiplier="0.2" id="Ilr-1j-807"/>
+                            <constraint firstItem="7O9-me-z73" firstAttribute="leading" secondItem="B1m-WI-Z50" secondAttribute="leading" constant="-5" id="J0w-h1-HgS"/>
+                            <constraint firstItem="7O9-me-z73" firstAttribute="height" secondItem="B1m-WI-Z50" secondAttribute="height" multiplier="0.35" id="PK5-0V-q8L"/>
+                            <constraint firstItem="7O9-me-z73" firstAttribute="top" secondItem="B1m-WI-Z50" secondAttribute="top" constant="-5" id="XNY-uf-4pH"/>
+                            <constraint firstItem="oYM-Jj-zat" firstAttribute="top" secondItem="EtE-Ix-zDs" secondAttribute="bottom" id="fgW-OU-iZR"/>
+                            <constraint firstAttribute="trailing" secondItem="730-5V-D7d" secondAttribute="trailing" constant="20" id="jbW-rh-nZl"/>
+                            <constraint firstItem="EtE-Ix-zDs" firstAttribute="leading" secondItem="B1m-WI-Z50" secondAttribute="leading" id="nIY-Sk-Pg3"/>
+                            <constraint firstItem="EtE-Ix-zDs" firstAttribute="top" secondItem="7O9-me-z73" secondAttribute="bottom" id="pTQ-Gd-tJN"/>
+                            <constraint firstItem="oYM-Jj-zat" firstAttribute="top" secondItem="730-5V-D7d" secondAttribute="bottom" constant="20" id="seP-dI-Z1Q"/>
+                            <constraint firstAttribute="trailing" secondItem="EtE-Ix-zDs" secondAttribute="trailing" id="sk1-wC-Toj"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="reportTableView" destination="EtE-Ix-zDs" id="Sh5-mD-Mja"/>
+                            <outlet property="topBG" destination="7O9-me-z73" id="ftl-a7-NyJ"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mainView" destination="B1m-WI-Z50" id="TxR-m9-7ZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhT-kO-zlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="370"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BGDark" width="320" height="198"/>
+        <image name="NightMainButton" width="78" height="78"/>
+    </resources>
+</document>

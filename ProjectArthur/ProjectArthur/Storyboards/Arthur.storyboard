@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QJw-jG-JfL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Arthur View Controller-->
+        <scene sceneID="s6h-nX-tt2">
+            <objects>
+                <viewController id="QJw-jG-JfL" customClass="ArthurViewController" customModule="ProjectArthur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fuP-Tm-urG"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Hm-l7-4yr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDh-ra-lI5" customClass="ArthurMainView" customModule="ProjectArthur" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArthurShadow" translatesAutoresizingMaskIntoConstraints="NO" id="zib-HS-HJZ">
+                                <rect key="frame" x="131" y="390" width="112.5" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zib-HS-HJZ" secondAttribute="height" multiplier="126:23" id="wkF-Th-YxJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArthurAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="4vN-RB-ERd">
+                                <rect key="frame" x="94" y="152" width="187.5" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4vN-RB-ERd" secondAttribute="height" multiplier="195:238" id="ikJ-QU-O4b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36470588235294116" green="0.49411764705882355" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4vN-RB-ERd" firstAttribute="centerY" secondItem="GDh-ra-lI5" secondAttribute="centerY" multiplier="0.8" id="NR3-ni-Qtb"/>
+                            <constraint firstItem="zib-HS-HJZ" firstAttribute="width" secondItem="GDh-ra-lI5" secondAttribute="width" multiplier="0.3" id="a1C-oD-xLY"/>
+                            <constraint firstItem="4vN-RB-ERd" firstAttribute="width" secondItem="GDh-ra-lI5" secondAttribute="width" multiplier="0.5" id="abO-Jg-HeV"/>
+                            <constraint firstItem="zib-HS-HJZ" firstAttribute="centerX" secondItem="GDh-ra-lI5" secondAttribute="centerX" id="qkm-i4-0xX"/>
+                            <constraint firstItem="4vN-RB-ERd" firstAttribute="centerX" secondItem="GDh-ra-lI5" secondAttribute="centerX" id="swO-hZ-ftc"/>
+                            <constraint firstItem="zib-HS-HJZ" firstAttribute="centerY" secondItem="GDh-ra-lI5" secondAttribute="centerY" multiplier="1.2" id="yLl-BX-D54"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="arthurImageView" destination="4vN-RB-ERd" id="fjD-eu-DDC"/>
+                            <outlet property="arthurYConstraint" destination="NR3-ni-Qtb" id="DWo-4b-cVv"/>
+                            <outlet property="shadowImageView" destination="zib-HS-HJZ" id="Mkk-Ed-ibC"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mainView" destination="GDh-ra-lI5" id="K57-nT-IfD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pnY-UJ-1vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230.5" y="235.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ArthurAvatar" width="195" height="237"/>
+        <image name="ArthurShadow" width="176" height="32"/>
+    </resources>
+</document>

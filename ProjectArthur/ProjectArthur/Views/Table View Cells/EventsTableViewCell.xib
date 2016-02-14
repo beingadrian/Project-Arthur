@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="220" id="EWP-43-lxW" customClass="EventsTableViewCell" customModule="ProjectArthur" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EWP-43-lxW" id="ec0-VW-S12">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOl-fy-5DA" customClass="DesignableView" customModule="ProjectArthur" customModuleProvider="target">
+                        <rect key="frame" x="22" y="16" width="276" height="186.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events tonight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CW-qw-x3G">
+                                <rect key="frame" x="25" y="20" width="114.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="QuestBulletPoint" translatesAutoresizingMaskIntoConstraints="NO" id="4tn-ex-CNh">
+                                <rect key="frame" x="20" y="66" width="9" height="9"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quest one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRc-eW-xtR" userLabel="First event label">
+                                <rect key="frame" x="42" y="62" width="70" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="QuestBulletPoint" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-fQ-TMS">
+                                <rect key="frame" x="20" y="92" width="9" height="9"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quest two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLk-u0-S0R">
+                                <rect key="frame" x="42" y="88" width="69.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="QuestBulletPoint" translatesAutoresizingMaskIntoConstraints="NO" id="Wy4-It-qEP">
+                                <rect key="frame" x="20" y="118" width="9" height="9"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quest three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKa-FT-KIo">
+                                <rect key="frame" x="42" y="115" width="80" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardLine" translatesAutoresizingMaskIntoConstraints="NO" id="JP1-8f-mcN">
+                                <rect key="frame" x="25" y="48" width="226" height="2"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wy4-It-qEP" firstAttribute="top" secondItem="RRI-fQ-TMS" secondAttribute="bottom" constant="17" id="0AG-ut-S2e"/>
+                            <constraint firstItem="KRc-eW-xtR" firstAttribute="centerY" secondItem="4tn-ex-CNh" secondAttribute="centerY" id="0Je-GJ-JR5"/>
+                            <constraint firstItem="RRI-fQ-TMS" firstAttribute="top" secondItem="4tn-ex-CNh" secondAttribute="bottom" constant="17" id="203-fL-mzw"/>
+                            <constraint firstItem="dKa-FT-KIo" firstAttribute="centerY" secondItem="Wy4-It-qEP" secondAttribute="centerY" id="2fG-cu-kzC"/>
+                            <constraint firstItem="Wy4-It-qEP" firstAttribute="leading" secondItem="kOl-fy-5DA" secondAttribute="leading" constant="20" id="2uA-II-jSz"/>
+                            <constraint firstItem="KRc-eW-xtR" firstAttribute="leading" secondItem="4tn-ex-CNh" secondAttribute="trailing" constant="13" id="37f-hC-i34"/>
+                            <constraint firstItem="RRI-fQ-TMS" firstAttribute="leading" secondItem="kOl-fy-5DA" secondAttribute="leading" constant="20" id="8MX-a4-moh"/>
+                            <constraint firstItem="4tn-ex-CNh" firstAttribute="top" secondItem="9CW-qw-x3G" secondAttribute="bottom" constant="25.5" id="FL9-ob-ydM"/>
+                            <constraint firstItem="9CW-qw-x3G" firstAttribute="top" secondItem="kOl-fy-5DA" secondAttribute="top" constant="20" id="RxR-Qt-Iez"/>
+                            <constraint firstItem="JP1-8f-mcN" firstAttribute="top" secondItem="9CW-qw-x3G" secondAttribute="bottom" constant="7" id="U0F-qV-Sqi"/>
+                            <constraint firstAttribute="trailing" secondItem="JP1-8f-mcN" secondAttribute="trailing" constant="25" id="UXU-ad-r0C"/>
+                            <constraint firstItem="dKa-FT-KIo" firstAttribute="leading" secondItem="Wy4-It-qEP" secondAttribute="trailing" constant="13" id="WqT-xL-N5j"/>
+                            <constraint firstItem="4tn-ex-CNh" firstAttribute="leading" secondItem="kOl-fy-5DA" secondAttribute="leading" constant="20" id="kyy-xB-mzW"/>
+                            <constraint firstItem="QLk-u0-S0R" firstAttribute="centerY" secondItem="RRI-fQ-TMS" secondAttribute="centerY" id="ogD-iH-L7y"/>
+                            <constraint firstItem="9CW-qw-x3G" firstAttribute="leading" secondItem="kOl-fy-5DA" secondAttribute="leading" constant="25" id="pPm-1Z-RXH"/>
+                            <constraint firstItem="QLk-u0-S0R" firstAttribute="leading" secondItem="RRI-fQ-TMS" secondAttribute="trailing" constant="13" id="qVz-vg-aD1"/>
+                            <constraint firstItem="JP1-8f-mcN" firstAttribute="leading" secondItem="kOl-fy-5DA" secondAttribute="leading" constant="25" id="vIV-Ni-Wi0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="3.5" height="3.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                <integer key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kOl-fy-5DA" firstAttribute="width" secondItem="ec0-VW-S12" secondAttribute="width" multiplier="0.86" id="L8e-JT-D18"/>
+                    <constraint firstItem="kOl-fy-5DA" firstAttribute="centerX" secondItem="ec0-VW-S12" secondAttribute="centerX" id="NfX-YB-xfE"/>
+                    <constraint firstItem="kOl-fy-5DA" firstAttribute="centerY" secondItem="ec0-VW-S12" secondAttribute="centerY" id="dpK-8a-fUe"/>
+                    <constraint firstItem="kOl-fy-5DA" firstAttribute="height" secondItem="ec0-VW-S12" secondAttribute="height" multiplier="0.85" id="wJJ-I7-HZE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstEventLabel" destination="KRc-eW-xtR" id="cpz-5G-bpf"/>
+                <outlet property="secondEventLabel" destination="QLk-u0-S0R" id="tIW-aa-0Pj"/>
+                <outlet property="thirdEventLabel" destination="dKa-FT-KIo" id="Ehc-Rf-FKG"/>
+            </connections>
+            <point key="canvasLocation" x="262.5" y="248"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CardLine" width="237" height="2"/>
+        <image name="QuestBulletPoint" width="9" height="9"/>
+    </resources>
+</document>
