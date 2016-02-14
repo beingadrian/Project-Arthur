@@ -24,6 +24,9 @@
 		332610AA1C6FD2D3008B8B5C /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 332610A71C6FD2D3008B8B5C /* AcousticModelEnglish.bundle */; };
 		332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610A81C6FD2D3008B8B5C /* OpenEars.framework */; };
 		332610AC1C6FD2D3008B8B5C /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610A91C6FD2D3008B8B5C /* Slt.framework */; };
+		332610AF1C6FD362008B8B5C /* HealthKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */; };
+		332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */; };
+		332610B31C6FEBCF008B8B5C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B21C6FEBCF008B8B5C /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		332610A71C6FD2D3008B8B5C /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
 		332610A81C6FD2D3008B8B5C /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		332610A91C6FD2D3008B8B5C /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAPI.swift; sourceTree = "<group>"; };
+		332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersAPI.swift; sourceTree = "<group>"; };
+		332610B21C6FEBCF008B8B5C /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				3326109A1C6FD0C0008B8B5C /* View Controller */,
+				332610AD1C6FD354008B8B5C /* APIs */,
 				332610A61C6FD2D3008B8B5C /* Frameworks */,
 				332610281C6FCB1F008B8B5C /* AppDelegate.swift */,
 				3326102C1C6FCB1F008B8B5C /* Main.storyboard */,
@@ -168,6 +175,7 @@
 		3326109A1C6FD0C0008B8B5C /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				332610B21C6FEBCF008B8B5C /* TestViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -184,6 +192,15 @@
 				332610A91C6FD2D3008B8B5C /* Slt.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		332610AD1C6FD354008B8B5C /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */,
+				332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +353,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */,
 				332610291C6FCB1F008B8B5C /* AppDelegate.swift in Sources */,
+				332610B31C6FEBCF008B8B5C /* TestViewController.swift in Sources */,
+				332610AF1C6FD362008B8B5C /* HealthKitAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
