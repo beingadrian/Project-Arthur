@@ -24,17 +24,24 @@ class ReportViewController: UIViewController {
     let alert = UIAlertController(title: "", message: "", preferredStyle: .Alert)
     
     @IBAction func arthurButtonTapped(sender: UIButton) {
-        guard let isHome = NSUserDefaults.standardUserDefaults().valueForKey("isHome") else {
-            presentNoBeaconAlert()
-            return
-        }
-        if isHome as! Bool == true {
-            let storyboard = UIStoryboard(name: "Arthur", bundle: NSBundle.mainBundle())
-            let vc = storyboard.instantiateInitialViewController()
-            self.presentViewController(vc!, animated: true, completion: nil)
-        } else {
-            presentNotHomeAlert()
-        }
+        
+        // For demo purposes -> Allow connection to Arthur at any time
+        
+//        guard let isHome = NSUserDefaults.standardUserDefaults().valueForKey("isHome") else {
+//            presentNoBeaconAlert()
+//            return
+//        }
+//        if isHome as! Bool == true {
+//            let storyboard = UIStoryboard(name: "Arthur", bundle: NSBundle.mainBundle())
+//            let vc = storyboard.instantiateInitialViewController()
+//            self.presentViewController(vc!, animated: true, completion: nil)
+//        } else {
+//            presentNotHomeAlert()
+//        }
+        
+        let storyboard = UIStoryboard(name: "Arthur", bundle: NSBundle.mainBundle())
+        let vc = storyboard.instantiateInitialViewController()
+        self.presentViewController(vc!, animated: true, completion: nil)
     }
     
     // MARK: - View did load
