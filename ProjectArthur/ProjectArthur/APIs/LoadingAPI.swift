@@ -15,6 +15,8 @@ class LoadingAPI {
     
     var disposeBag = DisposeBag()
     
+    let realmHelper = RealmReportHelper()
+    
     func createWalkCard() -> Observable<RealmCard> {
         
         let twelveHoursAgoInterval: NSTimeInterval = 60 * 60 * 9
@@ -45,6 +47,8 @@ class LoadingAPI {
                     realm.add(adventure)
                     realm.add(card, update: true)
                 }
+                
+                self.realmHelper.addCardToReport(card)
                 
                 return Observable.just(card)
             }
@@ -77,6 +81,8 @@ class LoadingAPI {
                     realm.add(card, update: true)
                 }
                 
+                self.realmHelper.addCardToReport(card)
+                
                 return Observable.just(card)
                 
             }
@@ -102,6 +108,8 @@ class LoadingAPI {
                 try! realm.write {
                     realm.add(card, update: true)
                 }
+                
+                self.realmHelper.addCardToReport(card)
                 
                 return Observable.just(card)
             }
