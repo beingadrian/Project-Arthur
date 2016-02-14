@@ -61,6 +61,7 @@ class OpenEarsAPI {
     init() {
         eventObserver = OEEventsObserver()
         loadOpenEars()
+        setupPSphinx()
         
         //        eventObserver.delegate = self <-- Do this in VC
         
@@ -88,5 +89,10 @@ class OpenEarsAPI {
     
     func stopListening() {
         OEPocketsphinxController.sharedInstance().stopListening()
+    }
+    
+    private func setupPSphinx() {
+        OEPocketsphinxController.sharedInstance().secondsOfSilenceToDetect = 0.5
+        OEPocketsphinxController.sharedInstance().vadThreshold = 3.5
     }
 }
