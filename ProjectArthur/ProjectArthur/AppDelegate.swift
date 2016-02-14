@@ -66,11 +66,16 @@ extension AppDelegate: ESTBeaconManagerDelegate {
     func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
         
         print("Did enter region")
+        
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isHome")
+        
         NotificationAPI().notifyUser()
         
     }
     
     func beaconManager(manager: AnyObject!, didExitRegion region: CLBeaconRegion!) {
+        
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isHome")
         
         print("Did exit region")
         

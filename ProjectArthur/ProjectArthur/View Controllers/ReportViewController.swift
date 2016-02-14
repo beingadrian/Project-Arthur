@@ -16,6 +16,20 @@ class ReportViewController: UIViewController {
     
     var viewModel: ReportViewModel!
     
+    let alert = UIAlertController(title: "", message: "", preferredStyle: .Alert)
+    
+    @IBAction func arthurButtonTapped(sender: UIButton) {
+        guard let isHome = NSUserDefaults.standardUserDefaults().valueForKey("isHome") else {
+            presentNoBeaconAlert()
+            return
+        }
+        if isHome as! Bool {
+            self.presentViewController(ArthurViewController(), animated: true, completion: nil)
+        } else {
+            presentNotHomeAlert()
+        }
+    }
+    
     // MARK: - View did load
     
     override func viewDidLoad() {
@@ -33,6 +47,20 @@ class ReportViewController: UIViewController {
         self.mainView.reportTableView.delegate = self
         self.mainView.reportTableView.dataSource = self
         
+        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+        
+    }
+    
+    private func presentNoBeaconAlert() {
+        alert.title = "Beacon not detected"
+        alert.message = "Please set up a beacon and connect to it beforehand."
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    private func presentNotHomeAlert() {
+        alert.title = "Arthur can only be opened while home"
+        alert.message = "Please connect to your beacon."
+        presentViewController(alert, animated: true, completion: nil)
     }
     
 }

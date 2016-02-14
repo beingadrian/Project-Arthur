@@ -40,6 +40,9 @@
                                         <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="arthurButtonTapped:" destination="X6R-FH-JUf" eventType="touchUpInside" id="RGs-wE-uEf"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGDark" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-me-z73" customClass="TopBGImageView" customModule="ProjectArthur" customModuleProvider="target">
                                 <rect key="frame" x="-20" y="-20" width="360" height="199"/>
