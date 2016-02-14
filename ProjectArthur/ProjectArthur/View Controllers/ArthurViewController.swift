@@ -102,6 +102,7 @@ extension ArthurViewController: OEEventsObserverDelegate {
     func pocketsphinxDidReceiveHypothesis(hypothesis: String!, recognitionScore: String!, utteranceID: String!) {
 //        print("Heard: \(hypothesis.characters.split{$0 == " "}.map(String.init).last)\nRecognitionScore: \(recognitionScore)")
         let heard = hypothesis.characters.split{$0 == " "}.map(String.init).last
+        print(heard)
         let affirmation = affirmativeModel.contains(heard!)
         openEars.stopListening()
         switch state {

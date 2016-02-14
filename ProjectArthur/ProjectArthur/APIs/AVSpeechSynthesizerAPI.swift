@@ -45,7 +45,14 @@ class AVSpeechSynthesizerAPI {
     }
     
     func sayReport() {
-        let speechUtterance = AVSpeechUtterance(string: realmHelper.getScript())
+        let report = realmHelper.getScript()
+        var speechUtterance: AVSpeechUtterance!
+        if report != "" {
+            speechUtterance = AVSpeechUtterance(string: report)
+        }
+        else {
+            speechUtterance = AVSpeechUtterance(string: "There are no reports for today.")
+        }
         let voice = AVSpeechSynthesisVoice(language: "en-GB")
         speechUtterance.pitchMultiplier = 1.75
         speechUtterance.voice = voice
@@ -53,7 +60,7 @@ class AVSpeechSynthesizerAPI {
     }
     
     func closing() {
-        let speechUtterance = AVSpeechUtterance(string: "Thank you, and have a great day!")
+        let speechUtterance = AVSpeechUtterance(string: "Thank you, see you later!")
         let voice = AVSpeechSynthesisVoice(language: "en-GB")
         speechUtterance.pitchMultiplier = 1.75
         speechUtterance.voice = voice

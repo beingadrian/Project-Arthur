@@ -14,6 +14,7 @@ let affirmativeModel: Set<String> = Set([
     "FINE",
     "DEFINITELY",
     "SURE",
+    "OK",
     ])
 
 let denialModel: Set<String> = Set([
@@ -25,7 +26,7 @@ let denialModel: Set<String> = Set([
 private let languageModel: Array<String> = Array(affirmativeModel) + Array(denialModel)
 
 private let grammarModel = [
-    ["YES", "SURE", "ALRIGHT", "FINE", "DEFINITELY", "NO", "NEGATIVE", "NOPE"]: "OneOfTheseWillBeSaidOnce"
+    ["YES", "SURE", "ALRIGHT", "FINE", "DEFINITELY", "OK", "NO", "NEGATIVE", "NOPE"]: "OneOfTheseWillBeSaidOnce"
 ]
 
 //private let grammarModel = [
