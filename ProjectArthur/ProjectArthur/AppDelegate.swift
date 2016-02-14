@@ -13,9 +13,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    private let beaconManager = ESTBeaconManager()
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // MARK: - Push notifications
+        
+        UIApplication.sharedApplication().registerUserNotificationSettings(
+            UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil))
+        
+        // MARK: - Beacons
+        
+        self.beaconManager.delegate = self
+        self.beaconManager.requestAlwaysAuthorization()
+        
+        let beaconRegion = CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
+            major: 7348,
+            minor: 43372,
+            identifier: "Home")
+        self.beaconManager.startMonitoringForRegion(beaconRegion)
+        
         return true
     }
 
@@ -41,6 +59,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
 
+extension AppDelegate: ESTBeaconManagerDelegate {
+    
+    func beaconManager(manager: AnyObject!, didEnterRegion region: CLBeaconRegion!) {
+        
+        print("Did enter region")
+        NotificationAPI().notifyUser()
+        
+    }
+    
+    func beaconManager(manager: AnyObject!, didExitRegion region: CLBeaconRegion!) {
+        
+        print("Did exit region")
+        
+    }
+    
+    func beaconManager(manager: AnyObject!, monitoringDidFailForRegion region: CLBeaconRegion!, withError error: NSError!) {
+        
+        print("Failed monitoring for region: \(error)")
+        
+    }
+    
+    func beaconManager(manager: AnyObject!, didFailWithError error: NSError!) {
+        
+        print("Beacon manager error: \(error)")
+        
+    }
+    
 }
 

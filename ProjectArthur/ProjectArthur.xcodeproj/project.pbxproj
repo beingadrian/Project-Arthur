@@ -27,14 +27,16 @@
 		332610AF1C6FD362008B8B5C /* HealthKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */; };
 		332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */; };
 		332610B51C7009CA008B8B5C /* CalendarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B41C7009CA008B8B5C /* CalendarAPI.swift */; };
+		332610B71C700F8F008B8B5C /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610B61C700F8F008B8B5C /* ArthurViewController.swift */; };
+		332610BB1C702A7F008B8B5C /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332610BA1C702A7F008B8B5C /* Arthur.storyboard */; };
+		332610BD1C702B5D008B8B5C /* NotificationsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610BC1C702B5D008B8B5C /* NotificationsAPI.swift */; };
+		332610BF1C7033C0008B8B5C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610BE1C7033C0008B8B5C /* HealthKit.framework */; };
 		BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */; };
-		BF4072631C6FD66600DA8866 /* ArthurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072621C6FD66600DA8866 /* ArthurViewController.swift */; };
 		BF40726D1C6FE19200DA8866 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726B1C6FE19200DA8866 /* ReportTableViewCell.swift */; };
 		BF40726E1C6FE19200DA8866 /* ReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF40726C1C6FE19200DA8866 /* ReportTableViewCell.xib */; };
 		BF4072701C6FE1C400DA8866 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726F1C6FE1C400DA8866 /* ReportView.swift */; };
 		BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072721C6FE27400DA8866 /* DesignableView.swift */; };
 		BF4072751C6FE49800DA8866 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */; };
-		BF4072781C6FE99B00DA8866 /* Arthur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4072771C6FE99B00DA8866 /* Arthur.storyboard */; };
 		BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40727A1C6FEB2900DA8866 /* ArthurMainView.swift */; };
 		BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4072821C6FFAF000DA8866 /* ReportMainView.swift */; };
 		BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4072861C6FFF5900DA8866 /* ReportMainView.xib */; };
@@ -98,15 +100,18 @@
 		332610AE1C6FD362008B8B5C /* HealthKitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAPI.swift; sourceTree = "<group>"; };
 		332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersAPI.swift; sourceTree = "<group>"; };
 		332610B41C7009CA008B8B5C /* CalendarAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarAPI.swift; sourceTree = "<group>"; };
+		332610B61C700F8F008B8B5C /* ArthurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
+		332610BA1C702A7F008B8B5C /* Arthur.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
+		332610BC1C702B5D008B8B5C /* NotificationsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsAPI.swift; sourceTree = "<group>"; };
+		332610BE1C7033C0008B8B5C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		332610C01C7033C0008B8B5C /* ProjectArthur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ProjectArthur.entitlements; sourceTree = "<group>"; };
 		BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenEarsAPI.swift; sourceTree = "<group>"; };
 		BF40725C1C6FD57300DA8866 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		BF4072621C6FD66600DA8866 /* ArthurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArthurViewController.swift; sourceTree = "<group>"; };
 		BF40726B1C6FE19200DA8866 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 		BF40726C1C6FE19200DA8866 /* ReportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportTableViewCell.xib; sourceTree = "<group>"; };
 		BF40726F1C6FE1C400DA8866 /* ReportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		BF4072721C6FE27400DA8866 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		BF4072741C6FE49800DA8866 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
-		BF4072771C6FE99B00DA8866 /* Arthur.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Arthur.storyboard; sourceTree = "<group>"; };
 		BF40727A1C6FEB2900DA8866 /* ArthurMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArthurMainView.swift; sourceTree = "<group>"; };
 		BF4072821C6FFAF000DA8866 /* ReportMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportMainView.swift; sourceTree = "<group>"; };
 		BF4072861C6FFF5900DA8866 /* ReportMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportMainView.xib; sourceTree = "<group>"; };
@@ -123,6 +128,7 @@
 				332610981C6FD086008B8B5C /* RxCocoa.framework in Frameworks */,
 				332610851C6FCF74008B8B5C /* RealmSwift.framework in Frameworks */,
 				332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */,
+				332610BF1C7033C0008B8B5C /* HealthKit.framework in Frameworks */,
 				332610831C6FCF74008B8B5C /* Realm.framework in Frameworks */,
 				332610951C6FD04E008B8B5C /* RxSwift.framework in Frameworks */,
 			);
@@ -148,6 +154,7 @@
 		3326101C1C6FCB1F008B8B5C = {
 			isa = PBXGroup;
 			children = (
+				332610BE1C7033C0008B8B5C /* HealthKit.framework */,
 				332610271C6FCB1F008B8B5C /* ProjectArthur */,
 				3326103C1C6FCB1F008B8B5C /* ProjectArthurTests */,
 				332610471C6FCB1F008B8B5C /* ProjectArthurUITests */,
@@ -168,6 +175,7 @@
 		332610271C6FCB1F008B8B5C /* ProjectArthur */ = {
 			isa = PBXGroup;
 			children = (
+				332610C01C7033C0008B8B5C /* ProjectArthur.entitlements */,
 				332610AD1C6FD354008B8B5C /* APIs */,
 				BF4072761C6FE98F00DA8866 /* Storyboards */,
 				BF4072711C6FE26700DA8866 /* Designables */,
@@ -224,6 +232,7 @@
 				BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */,
 				332610B01C6FE6C8008B8B5C /* RemindersAPI.swift */,
 				332610B41C7009CA008B8B5C /* CalendarAPI.swift */,
+				332610BC1C702B5D008B8B5C /* NotificationsAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -231,7 +240,7 @@
 		BF4072611C6FD65D00DA8866 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF4072621C6FD66600DA8866 /* ArthurViewController.swift */,
+				332610B61C700F8F008B8B5C /* ArthurViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -267,7 +276,7 @@
 		BF4072761C6FE98F00DA8866 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				BF4072771C6FE99B00DA8866 /* Arthur.storyboard */,
+				332610BA1C702A7F008B8B5C /* Arthur.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -360,6 +369,15 @@
 				TargetAttributes = {
 					332610241C6FCB1F008B8B5C = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = E94PZ6NN69;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					332610381C6FCB1F008B8B5C = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -397,7 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */,
-				BF4072781C6FE99B00DA8866 /* Arthur.storyboard in Resources */,
+				332610BB1C702A7F008B8B5C /* Arthur.storyboard in Resources */,
 				BF40726E1C6FE19200DA8866 /* ReportTableViewCell.xib in Resources */,
 				332610331C6FCB1F008B8B5C /* LaunchScreen.storyboard in Resources */,
 				332610AA1C6FD2D3008B8B5C /* AcousticModelEnglish.bundle in Resources */,
@@ -445,16 +463,17 @@
 			files = (
 				332610B51C7009CA008B8B5C /* CalendarAPI.swift in Sources */,
 				BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */,
+				332610B71C700F8F008B8B5C /* ArthurViewController.swift in Sources */,
 				332610B11C6FE6C8008B8B5C /* RemindersAPI.swift in Sources */,
 				332610291C6FCB1F008B8B5C /* AppDelegate.swift in Sources */,
 				332610AF1C6FD362008B8B5C /* HealthKitAPI.swift in Sources */,
 				BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */,
 				BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */,
 				BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */,
-				BF4072631C6FD66600DA8866 /* ArthurViewController.swift in Sources */,
 				BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */,
 				BF4072701C6FE1C400DA8866 /* ReportView.swift in Sources */,
 				BF40726D1C6FE19200DA8866 /* ReportTableViewCell.swift in Sources */,
+				332610BD1C702B5D008B8B5C /* NotificationsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +613,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjectArthur/ProjectArthur.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -605,6 +627,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theinitiative.ProjectArthur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ProjectArthur/Bridging-Header.h";
 			};
 			name = Debug;
@@ -613,6 +636,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjectArthur/ProjectArthur.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -624,6 +650,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theinitiative.ProjectArthur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ProjectArthur/Bridging-Header.h";
 			};
 			name = Release;

@@ -17,7 +17,6 @@ class ArthurViewController: UIViewController {
         
         setup()
         
-        // Do any additional setup after loading the view.
     }
     
     private func setup() {
