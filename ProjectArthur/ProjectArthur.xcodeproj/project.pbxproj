@@ -42,6 +42,7 @@
 		332610D61C7096E9008B8B5C /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332610D41C7096E9008B8B5C /* EventsTableViewCell.xib */; };
 		332610D81C70A51C008B8B5C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332610D71C70A51C008B8B5C /* HealthKit.framework */; };
 		332610DB1C70A7B3008B8B5C /* CardLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610DA1C70A7B3008B8B5C /* CardLoadingView.swift */; };
+		332610DD1C70E808008B8B5C /* LazyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332610DC1C70E808008B8B5C /* LazyLoader.swift */; };
 		BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */; };
 		BF40726D1C6FE19200DA8866 /* WalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40726B1C6FE19200DA8866 /* WalkTableViewCell.swift */; };
 		BF40726E1C6FE19200DA8866 /* WalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF40726C1C6FE19200DA8866 /* WalkTableViewCell.xib */; };
@@ -133,6 +134,7 @@
 		332610D41C7096E9008B8B5C /* EventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
 		332610D71C70A51C008B8B5C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		332610DA1C70A7B3008B8B5C /* CardLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardLoadingView.swift; sourceTree = "<group>"; };
+		332610DC1C70E808008B8B5C /* LazyLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyLoader.swift; sourceTree = "<group>"; };
 		BF40725A1C6FD54000DA8866 /* OpenEarsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenEarsAPI.swift; sourceTree = "<group>"; };
 		BF40725C1C6FD57300DA8866 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		BF40726B1C6FE19200DA8866 /* WalkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkTableViewCell.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 				BF40726F1C6FE1C400DA8866 /* ReportView.swift */,
 				332610D31C7096E9008B8B5C /* EventsTableViewCell.swift */,
 				332610D41C7096E9008B8B5C /* EventsTableViewCell.xib */,
+				332610DC1C70E808008B8B5C /* LazyLoader.swift */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				BF50EEF11C705AE30079590F /* RealmReport.swift in Sources */,
 				BF50EEF91C708DD60079590F /* RealmQuest.swift in Sources */,
 				BF40726D1C6FE19200DA8866 /* WalkTableViewCell.swift in Sources */,
+				332610DD1C70E808008B8B5C /* LazyLoader.swift in Sources */,
 				332610D51C7096E9008B8B5C /* EventsTableViewCell.swift in Sources */,
 				332610BD1C702B5D008B8B5C /* NotificationsAPI.swift in Sources */,
 				332610DB1C70A7B3008B8B5C /* CardLoadingView.swift in Sources */,

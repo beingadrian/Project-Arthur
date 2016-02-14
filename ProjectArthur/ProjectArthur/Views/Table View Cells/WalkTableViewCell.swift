@@ -44,6 +44,8 @@ class WalkTableViewCell: UITableViewCell {
         }
     }
     
+    var onCompletedLoadingData = PublishSubject<Void>()
+    
     // MARK: - Awake from nib
     
     override func awakeFromNib() {
@@ -57,6 +59,7 @@ class WalkTableViewCell: UITableViewCell {
             .subscribe(
                 onNext: { (card) -> Void in
                     self.card = card
+                    self.onCompletedLoadingData.onNext()
                 },
                 onError: { (error) -> Void in
                     print("Error creating walk card: \(error)")
@@ -68,3 +71,5 @@ class WalkTableViewCell: UITableViewCell {
     }
 
 }
+
+extension WalkTableViewCell: LazyLoader {}
