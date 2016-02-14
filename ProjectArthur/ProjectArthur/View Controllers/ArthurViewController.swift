@@ -12,10 +12,14 @@ class ArthurViewController: UIViewController {
     
     var openEars: OpenEarsAPI!
     
+    @IBOutlet weak var mainView: ArthurMainView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setup()
+//        setup()
+        mainView.speechAPI.speechTest()
+        
         
         // Do any additional setup after loading the view.
     }
