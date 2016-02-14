@@ -23,7 +23,8 @@ class ReportViewController: UIViewController {
             presentNoBeaconAlert()
             return
         }
-        if isHome as! Bool {
+        if isHome as! Bool == true {
+            
             self.presentViewController(ArthurViewController(), animated: true, completion: nil)
         } else {
             presentNotHomeAlert()
