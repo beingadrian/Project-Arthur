@@ -42,6 +42,8 @@
 		BF4072871C6FFF5900DA8866 /* ReportMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4072861C6FFF5900DA8866 /* ReportMainView.xib */; };
 		BF40728B1C70052400DA8866 /* TopBGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40728A1C70052400DA8866 /* TopBGImageView.swift */; };
 		BF40728F1C700E5300DA8866 /* AVSpeechSynthesizerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF40728E1C700E5300DA8866 /* AVSpeechSynthesizerAPI.swift */; };
+		BF50EEED1C702C900079590F /* RealmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEEC1C702C900079590F /* RealmCard.swift */; };
+		BF50EEEF1C703BAC0079590F /* RealmUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEEE1C703BAC0079590F /* RealmUIState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		BF4072861C6FFF5900DA8866 /* ReportMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportMainView.xib; sourceTree = "<group>"; };
 		BF40728A1C70052400DA8866 /* TopBGImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBGImageView.swift; sourceTree = "<group>"; };
 		BF40728E1C700E5300DA8866 /* AVSpeechSynthesizerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSpeechSynthesizerAPI.swift; sourceTree = "<group>"; };
+		BF50EEEC1C702C900079590F /* RealmCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCard.swift; sourceTree = "<group>"; };
+		BF50EEEE1C703BAC0079590F /* RealmUIState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUIState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				332610C01C7033C0008B8B5C /* ProjectArthur.entitlements */,
+				BF50EEEB1C702C810079590F /* Persistence */,
 				332610AD1C6FD354008B8B5C /* APIs */,
 				BF4072761C6FE98F00DA8866 /* Storyboards */,
 				BF4072711C6FE26700DA8866 /* Designables */,
@@ -300,6 +305,15 @@
 				BF40728A1C70052400DA8866 /* TopBGImageView.swift */,
 			);
 			path = "Image Views";
+			sourceTree = "<group>";
+		};
+		BF50EEEB1C702C810079590F /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				BF50EEEC1C702C900079590F /* RealmCard.swift */,
+				BF50EEEE1C703BAC0079590F /* RealmUIState.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,8 +487,11 @@
 				BF40725B1C6FD54000DA8866 /* OpenEarsAPI.swift in Sources */,
 				BF4072731C6FE27400DA8866 /* DesignableView.swift in Sources */,
 				BF4072831C6FFAF100DA8866 /* ReportMainView.swift in Sources */,
+				BF50EEEF1C703BAC0079590F /* RealmUIState.swift in Sources */,
+				BF4072631C6FD66600DA8866 /* ArthurViewController.swift in Sources */,
 				BF40727B1C6FEB2900DA8866 /* ArthurMainView.swift in Sources */,
 				BF40728F1C700E5300DA8866 /* AVSpeechSynthesizerAPI.swift in Sources */,
+				BF50EEED1C702C900079590F /* RealmCard.swift in Sources */,
 				BF4072701C6FE1C400DA8866 /* ReportView.swift in Sources */,
 				BF40726D1C6FE19200DA8866 /* ReportTableViewCell.swift in Sources */,
 				332610BD1C702B5D008B8B5C /* NotificationsAPI.swift in Sources */,
