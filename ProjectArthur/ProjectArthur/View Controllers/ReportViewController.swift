@@ -154,3 +154,11 @@ extension ReportViewController: UITableViewDataSource {
     }
     
 }
+
+extension ReportViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        mainView.moveBgByOffset(scrollView.contentOffset.y)
+
+        
+    }
+}

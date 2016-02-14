@@ -58,6 +58,7 @@
 		BF50EEF71C708D550079590F /* RealmEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEF61C708D550079590F /* RealmEvent.swift */; };
 		BF50EEF91C708DD60079590F /* RealmQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEF81C708DD60079590F /* RealmQuest.swift */; };
 		BF50EEFB1C708E320079590F /* RealmAdventure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF50EEFA1C708E320079590F /* RealmAdventure.swift */; };
+		BF50EEFD1C7102D90079590F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF50EEFC1C7102D90079590F /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		BF50EEF61C708D550079590F /* RealmEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmEvent.swift; sourceTree = "<group>"; };
 		BF50EEF81C708DD60079590F /* RealmQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmQuest.swift; sourceTree = "<group>"; };
 		BF50EEFA1C708E320079590F /* RealmAdventure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAdventure.swift; sourceTree = "<group>"; };
+		BF50EEFC1C7102D90079590F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				332610981C6FD086008B8B5C /* RxCocoa.framework in Frameworks */,
 				332610851C6FCF74008B8B5C /* RealmSwift.framework in Frameworks */,
 				332610AB1C6FD2D3008B8B5C /* OpenEars.framework in Frameworks */,
+				BF50EEFD1C7102D90079590F /* HealthKit.framework in Frameworks */,
 				332610831C6FCF74008B8B5C /* Realm.framework in Frameworks */,
 				332610951C6FD04E008B8B5C /* RxSwift.framework in Frameworks */,
 			);
@@ -187,6 +190,7 @@
 		3326101C1C6FCB1F008B8B5C = {
 			isa = PBXGroup;
 			children = (
+				BF50EEFC1C7102D90079590F /* HealthKit.framework */,
 				332610271C6FCB1F008B8B5C /* ProjectArthur */,
 				3326103C1C6FCB1F008B8B5C /* ProjectArthurTests */,
 				332610471C6FCB1F008B8B5C /* ProjectArthurUITests */,
@@ -454,7 +458,7 @@
 						DevelopmentTeam = E94PZ6NN69;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.Push = {
 								enabled = 0;
@@ -713,6 +717,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjectArthur/ProjectArthur.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -735,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProjectArthur/ProjectArthur.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
