@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class ReportViewController: UIViewController {
 
+    var disposeBag = DisposeBag()
+    
     // MARK: - Properties
     
     @IBOutlet var mainView: ReportMainView!
@@ -25,9 +28,26 @@ class ReportViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+//        HealthKitAPI().requestHealthKitPermissions()
+//            .subscribeOn(MainScheduler.instance)
+//            .subscribe(
+//                onNext: { (success) -> Void in
+//                    self.mainView.reportTableView.reloadData()
+//                },
+//                onError: { (error) -> Void in
+//                    print("Error requesting error \(error)")
+//                },
+//                onCompleted: nil,
+//                onDisposed: nil)
+//            .addDisposableTo(disposeBag)
+        
+    }
+    
     private func setup() {
         
-        self.viewModel = ReportViewModel()
+        self.viewModel = ReportViewModel(owner: self)
         
         // table view setup
         self.mainView.reportTableView.delegate = self
@@ -57,16 +77,13 @@ extension ReportViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return viewModel.cards.count
+        return viewModel.cells.count
         
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let nib = UINib(nibName: "WalkTableViewCell", bundle: nil)
-        let cell = nib.instantiateWithOwner(self, options: nil).first as! WalkTableViewCell
-        
-        cell.card = viewModel.cards[indexPath.row]
+        let cell = viewModel.cells[indexPath.row]
         
         return cell
         

@@ -11,5 +11,5 @@ import RealmSwift
 
 class RealmAdventure: Object {
     dynamic var steps = 0
-    dynamic var miles = 0.00
+    dynamic var distance = 0.00
 }

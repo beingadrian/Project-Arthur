@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import RxSwift
 
 class WalkTableViewCell: UITableViewCell {
 
+    var disposeBag = DisposeBag()
+    
     // MARK: - Properties
     
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var stepCountLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var cardView: DesignableView!
+    
+    var loadingView: CardLoadingView?
     
     var card: RealmCard? {
         didSet {
@@ -32,7 +38,7 @@ class WalkTableViewCell: UITableViewCell {
             let steps = card.adventure!.steps
             self.stepCountLabel.text = formatter.stringFromNumber(steps)
             
-            let distance = card.adventure!.miles
+            let distance = card.adventure!.distance
             self.distanceLabel.text = formatter.stringFromNumber(distance)
             
         }
@@ -45,6 +51,19 @@ class WalkTableViewCell: UITableViewCell {
         
         self.backgroundView = nil
         self.backgroundColor = UIColor.clearColor()
+        
+        LoadingAPI().createWalkCard()
+            .subscribeOn(MainScheduler.instance)
+            .subscribe(
+                onNext: { (card) -> Void in
+                    self.card = card
+                },
+                onError: { (error) -> Void in
+                    print("Error creating walk card: \(error)")
+                },
+                onCompleted: nil,
+                onDisposed: nil)
+            .addDisposableTo(disposeBag)
         
     }
 
