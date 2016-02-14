@@ -46,8 +46,6 @@ class LoadingAPI {
                     self.realmHelper.addCardToReport(card)
                 }
                 
-                self.realmHelper.addCardToReport(card)
-                
                 return Observable.just(card)
             }
     }
@@ -78,8 +76,6 @@ class LoadingAPI {
                     self.realmHelper.addCardToReport(card)
                 }
                 
-                self.realmHelper.addCardToReport(card)
-                
                 return Observable.just(card)
                 
             }
@@ -104,8 +100,6 @@ class LoadingAPI {
                 dispatch_async(dispatch_get_main_queue()) {
                     self.realmHelper.addCardToReport(card)
                 }
-                
-                self.realmHelper.addCardToReport(card)
                 
                 return Observable.just(card)
             }
